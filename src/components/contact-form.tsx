@@ -28,6 +28,7 @@ export default function ContactForm() {
     handleSubmit,
     watch,
     setValue,
+    reset,
     formState: { errors },
   } = useForm({ resolver: zodResolver(formSchema) });
 
@@ -45,10 +46,20 @@ export default function ContactForm() {
   };
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    startTransition(() => {
-      setTimeout(() => {
-        console.log(data);
-      }, 3000);
+    startTransition(async () => {
+      try {
+        await fetch('/api/contact', {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+        reset();
+        console.log('ok');
+      } catch (error) {
+        console.log(error);
+      }
     });
   };
 
