@@ -1,5 +1,5 @@
 import Author from '@/components/blog-author';
-import CtaSection from '@/components/sections/cta';
+import ContactSection from '@/components/sections/contact';
 import { getPost } from '@/lib/blog';
 import { siteConfig } from '@/lib/config';
 import { formatDate } from '@/lib/utils';
@@ -130,7 +130,7 @@ export default async function Blog({
         ></article>
       </div>
       <hr className="bg-muted rounded-full h-[1.5px] mx-auto w-full max-w-[800px]"></hr>
-      <CtaSection />
+      <ContactSection />
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import Blog from '@/components/sections/blog';
-import CTA from '@/components/sections/cta';
+import ContactSection from '@/components/sections/contact';
 import Features from '@/components/sections/features';
 import Footer from '@/components/sections/footer';
 import Header from '@/components/sections/header';
@@ -24,7 +24,7 @@ export default function Home() {
       <Pricing /> */}
       {/* <FAQ /> */}
       <Blog />
-      <CTA />
+      <ContactSection />
       <Footer />
     </main>
   );
