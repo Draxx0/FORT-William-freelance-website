@@ -1,3 +1,4 @@
+import Header from '@/components/sections/header';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { ThemeProvider } from '@/components/theme-provider';
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -36,6 +37,7 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem={false}
         >
+          <Header />
           {children}
           <ThemeToggle />
           <TailwindIndicator />

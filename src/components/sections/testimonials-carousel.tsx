@@ -63,14 +63,14 @@ export default function Component() {
                     <div className="">
                       <BlurFade delay={0.25 * 3} inView>
                         <h4 className="text-1xl font-semibold my-2">
-                          Leslie Alexander
+                          Romain BOUVIER
                         </h4>
                       </BlurFade>
                     </div>
                     <BlurFade delay={0.25 * 4} inView>
                       <div className=" mb-3">
                         <span className="text-sm text-themeDarkGray">
-                          UI Designer
+                          Fondateur de l&apos;agence VeryBerry
                         </span>
                       </div>
                     </BlurFade>

@@ -19,11 +19,11 @@ function HeroPill() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease }}
     >
-      <div className="w-fit rounded-full bg-primary px-2 py-0.5 text-center text-xs font-medium text-white sm:text-sm">
-        🔥​ Annonce
+      <div className="w-fit rounded-full bg-primary px-3 py-0.5 text-center text-xs font-medium text-white sm:text-sm">
+        ✍️​ Blog
       </div>
       <p className="text-xs font-medium text-primary sm:text-sm">
-        Réalisations
+        Dernier article
       </p>
       <svg
         width="12"

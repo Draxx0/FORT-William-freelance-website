@@ -24,7 +24,7 @@ const problems = [
   },
 ];
 
-export default function Component() {
+export default function ProjectsKeySteps() {
   return (
     <Section id="projets" title="Votre projet" subtitle="En trois étapes clés.">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

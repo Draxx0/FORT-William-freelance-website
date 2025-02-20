@@ -1,3 +1,4 @@
+import { Icons } from '@/components/icons';
 import { FaTwitter } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa6';
 import { RiInstagramFill } from 'react-icons/ri';
@@ -36,8 +37,27 @@ export const siteConfig = {
       label: 'Votre projet',
     },
     {
-      href: '/#services',
-      label: 'Services',
+      trigger: 'Services',
+      content: {
+        main: {
+          icon: <Icons.react className="h-6 w-6" />,
+          title: 'Services',
+          description: 'Découvrez les services',
+          href: '/services',
+        },
+        items: [
+          {
+            href: '/services/automatisations',
+            title: 'Automatisation',
+            description: 'Automate repetitive tasks and save time.',
+          },
+          {
+            href: '/services/developpement-de-site-web',
+            title: 'Développement web',
+            description: 'Développement de site web',
+          },
+        ],
+      },
     },
     {
       href: '/#realisations',

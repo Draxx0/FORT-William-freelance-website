@@ -1,15 +1,13 @@
-import Marquee from "@/components/magicui/marquee";
-import Image from "next/image";
+import Marquee from '@/components/magicui/marquee';
+import Image from 'next/image';
 
 const companies = [
-  "Google",
-  "Microsoft",
-  "Amazon",
-  "Netflix",
-  "YouTube",
-  "Instagram",
-  "Uber",
-  "Spotify",
+  'Spotify',
+  'Spotify',
+  'Spotify',
+  'Spotify',
+  'Spotify',
+  'Spotify',
 ];
 
 export default function Logos() {

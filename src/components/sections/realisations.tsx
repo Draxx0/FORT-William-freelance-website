@@ -33,7 +33,7 @@ const data = [
   },
 ];
 
-export default function Component() {
+export default function Realisations() {
   return (
     <Section
       id="realisations"

@@ -107,26 +107,8 @@ const main = {
 };
 
 const paragraph = {
+  color: 'black',
   fontSize: 16,
-};
-
-const logo = {
-  padding: '30px 20px',
-};
-
-const buttonContainer = {
-  display: 'flex',
-};
-
-const button = {
-  backgroundColor: '#dd3e3e',
-  borderRadius: 3,
-  color: '#FFF',
-  fontWeight: 'bold',
-  border: '1px solid rgb(0,0,0, 0.1)',
-  cursor: 'pointer',
-  margin: '0 auto',
-  padding: '12px 30px',
 };
 
 const content = {
@@ -135,14 +117,6 @@ const content = {
   overflow: 'hidden',
 };
 
-const image = {
-  maxWidth: '100%',
-};
-
 const boxInfos = {
   padding: '20px',
-};
-
-const containerImageFooter = {
-  padding: '45px 0 0 0',
 };
