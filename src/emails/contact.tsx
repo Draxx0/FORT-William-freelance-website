@@ -6,7 +6,6 @@ import {
   Head,
   Heading,
   Html,
-  Img,
   Preview,
   Row,
   Section,
@@ -29,22 +28,6 @@ export const ContactEmail = ({
         <Preview>Nouvelle demande - Freelance 👨‍💻</Preview>
         <Container>
           <Section style={content}>
-            <Row
-              style={{
-                backgroundColor: '#dd3e3e',
-                padding: '30px',
-                width: 'fit-content',
-                float: 'left',
-                marginTop: '20px',
-                borderRadius: '50%',
-              }}
-            >
-              <Img
-                style={image}
-                width={48}
-                src={`${websiteUrl}/icons/logo-white.svg`}
-              />
-            </Row>
             <Row style={{ ...boxInfos, paddingBottom: '0', display: 'flex' }}>
               <Column>
                 <Heading

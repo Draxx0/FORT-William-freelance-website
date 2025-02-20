@@ -113,7 +113,7 @@ function HeroCTA() {
         transition={{ delay: 0.8, duration: 0.8, ease }}
       >
         <Link
-          href="/contact"
+          href="#contact"
           className={cn(
             buttonVariants({ variant: 'default' }),
             'w-full active:scale-[98%] transition-all ease-in-out duration-300 hover:opacity-80 sm:w-auto dark:text-white text-background flex gap-2'
