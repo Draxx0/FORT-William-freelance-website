@@ -1,13 +1,21 @@
+import ContactEmail from '@/emails/contact';
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-type Prospect = {
+export type Prospect = {
   fullName: string;
   email: string;
   phone: string;
   services: string[];
   message: string;
 };
+
+const encodeBase64Url = (str: string) =>
+  Buffer.from(str)
+    .toString('base64')
+    .replace(/=/g, '') // Supprime les "=" de fin
+    .replace(/\+/g, '-') // Remplace "+" par "-"
+    .replace(/\//g, '_'); // Remplace "/" par "_"
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -25,47 +33,20 @@ export async function POST(req: NextRequest) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: prospect.email,
+      from: 'onboarding@resend.dev',
       to: 'williamfort.lmgl@gmail.com',
       subject: 'Nouvelle demande - Freelance 👨‍💻',
-      // react: EmailTemplate({ email, message}),
-      html: `
-     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
-       <h2 style="color: #333; text-align: center;">Nouvelle demande de contact 📩</h2>
-       <p style="font-size: 16px; color: #555;">Vous avez reçu une nouvelle demande de contact. Voici les informations du prospect :</p>
-       
-       <div style="background: #f9f9f9; padding: 15px; border-radius: 8px;">
-         <p><strong>👤 Nom :</strong> ${prospect.fullName}</p>
-         <p><strong>📧 Email :</strong> <a href="mailto:${
-           prospect.email
-         }" style="color: #007BFF; text-decoration: none;">${
-        prospect.email
-      }</a></p>
-         <p><strong>📞 Téléphone :</strong> <a href="tel:${
-           prospect.phone
-         }" style="color: #007BFF; text-decoration: none;">${
-        prospect.phone
-      }</a></p>
-         <p><strong>🛠️ Services demandés :</strong> ${prospect.services.join(
-           ', '
-         )}</p>
-         <p><strong>✉️ Message :</strong></p>
-         <blockquote style="background: #fff; padding: 10px; border-left: 4px solid #007BFF; font-style: italic; color: #333;">
-           ${prospect.message}
-         </blockquote>
-       </div>
-
-       <p style="text-align: center; margin-top: 20px;">
-         <a href="mailto:${
-           prospect.email
-         }" style="background: #007BFF; color: #fff; padding: 10px 15px; text-decoration: none; border-radius: 5px;">
-           Répondre au prospect
-         </a>
-       </p>
-
-       <p style="font-size: 12px; color: #888; text-align: center; margin-top: 20px;">Ce message a été généré automatiquement par votre formulaire de contact.</p>
-     </div>
-   `,
+      react: ContactEmail(prospect),
+      tags: [
+        {
+          name: 'recipient_email',
+          value: encodeBase64Url(prospect.email),
+        },
+        {
+          name: 'recipient_fullname',
+          value: encodeBase64Url(prospect.fullName),
+        },
+      ],
     });
 
     if (error) {

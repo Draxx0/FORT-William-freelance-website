@@ -14,12 +14,14 @@ import { Checkbox } from './ui/checkbox';
 import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
 
+// Utilisation de refine avec un message d'erreur personnalisé pour "consent"
 const formSchema = z.object({
   fullName: z.string().min(2, 'Nom trop court'),
   email: z.string().email('Email invalide'),
   phone: z.string().min(10, 'Numéro invalide'),
   services: z.array(z.string()).min(1, 'Choisissez au moins un service'),
   message: z.string().min(10, 'Message trop court'),
+  consent: z.boolean().default(false),
 });
 
 export default function ContactForm() {
@@ -33,6 +35,9 @@ export default function ContactForm() {
   } = useForm({ resolver: zodResolver(formSchema) });
 
   const [isPending, startTransition] = useTransition();
+
+  // Pour consent, on prend "on" ou "off" depuis watch
+  const consentValue = watch('consent');
 
   const selectedServices = watch('services') || [];
 
@@ -55,8 +60,7 @@ export default function ContactForm() {
             'Content-Type': 'application/json',
           },
         });
-        reset();
-        console.log('ok');
+        // reset();
       } catch (error) {
         console.log(error);
       }
@@ -151,6 +155,21 @@ export default function ContactForm() {
           <p className="text-red-500 text-sm mt-2">{errors.message.message}</p>
         )}
       </div>
+
+      <div className="flex items-center whitespace-nowrap space-x-2">
+        <Checkbox
+          id="consent"
+          checked={consentValue}
+          onCheckedChange={() => setValue('consent', !consentValue)}
+        />
+        <label htmlFor="consent" className="select-none cursor-pointer text-sm">
+          J&apos;accepte que mes informations soient stockées et utilisées pour
+          être recontacté(e).
+        </label>
+      </div>
+      {errors.consent && (
+        <p className="text-red-500 text-sm mt-2">{errors.consent.message}</p>
+      )}
 
       <Button
         type="submit"

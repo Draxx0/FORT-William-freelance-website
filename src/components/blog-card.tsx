@@ -15,10 +15,11 @@ export default function BlogCard({
       <div className="bg-background max-h-[625px] min-h-[625px] rounded-lg p-4 mb-4 border hover:shadow-sm transition-shadow duration-200">
         {data.image && (
           <Image
-            className="rounded-t-lg object-cover border mb-4"
+            className="rounded-t-lg object-cover w-full border mb-4"
             src={data.image}
-            width={1200}
-            height={630}
+            width={200}
+            height={200}
+            sizes="100vw"
             alt={data.title}
             priority={priority}
           />

@@ -1,6 +1,5 @@
 import Blog from '@/components/sections/blog';
 import ContactSection from '@/components/sections/contact';
-import Features from '@/components/sections/features';
 import Footer from '@/components/sections/footer';
 import Header from '@/components/sections/header';
 import Hero from '@/components/sections/hero';
@@ -18,7 +17,7 @@ export default function Home() {
       <Problem />
       <Solution />
       {/* <HowItWorks /> */}
-      <Features />
+      {/* <Features /> */}
       <TestimonialsCarousel />
       {/* <Testimonials />
       <Pricing /> */}
