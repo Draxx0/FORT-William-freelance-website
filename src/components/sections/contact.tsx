@@ -1,5 +1,6 @@
 import Section from '@/components/section';
 import ContactForm from '../contact-form';
+import BlurFade from "../magicui/blur-fade";
 
 export default function ContactSection() {
   return (
@@ -7,30 +8,34 @@ export default function ContactSection() {
       id="contact"
       title="Contact"
       subtitle="Prêt à faire décoller votre activité ?"
-      className="bg-primary/10 rounded-xl py-16"
+      className="bg-primary/10 rounded-xl py-16 px-4"
     >
       <div className="flex flex-col md:flex-row justify-between mt-12 gap-12 md:gap-6">
-        <div className="space-y-4 w-full md:w-2/5">
-          <div className="rounded-full w-fit px-4 py-2 bg-[#dd3e3e]/10 text-primary text-sm font-medium">
-            Contactez-moi 🤝
+        <BlurFade delay={0.2 * 0.2} inView className="w-full md:w-2/5">
+          <div className="space-y-4 ">
+            <div className="rounded-full w-fit px-4 py-2 bg-[#dd3e3e]/10 text-primary text-sm font-medium">
+              Contactez-moi 🤝
+            </div>
+            <h2 className="text-3xl font-medium">Travaillons ensemble</h2>
+            <p className="text-muted-foreground text-sm">
+              Je suis disponible pour tout type de projets, professionnel ou même
+              personnel.
+            </p>
+            <p className="text-muted-foreground text-sm">
+              Pour toute demande ou question supplémentaire, n&apos;hésitez pas à
+              me contacter par mail à{' '}
+              <a
+                href="mailto:contact@williamfort.fr"
+                className="text-primary text-sm font-medium mt-4 hover:underline hover:underline-offset-4"
+              >
+                contact@williamfort.fr
+              </a>
+            </p>
           </div>
-          <h2 className="text-3xl font-medium">Travaillons ensemble</h2>
-          <p className="text-muted-foreground text-sm">
-            Je suis disponible pour tout type de projets, professionnel ou même
-            personnel.
-          </p>
-          <p className="text-muted-foreground text-sm">
-            Pour toute demande ou question supplémentaire, n&apos;hésitez pas à
-            me contacter par mail à{' '}
-            <a
-              href="mailto:contact@williamfort.fr"
-              className="text-primary text-sm font-medium mt-4 hover:underline hover:underline-offset-4"
-            >
-              contact@williamfort.fr
-            </a>
-          </p>
-        </div>
-        <ContactForm />
+        </BlurFade>
+        <BlurFade delay={0.6 * 0.6} inView className="flex-1">
+          <ContactForm />
+        </BlurFade>
       </div>
     </Section>
   );

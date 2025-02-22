@@ -91,7 +91,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="flex-1 space-y-4">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="flex flex-col md:flex-row justify-between gap-4">
           <div className="space-y-2 w-full">
             <Label className="font-bold">Nom complet</Label>
@@ -199,8 +199,8 @@ export default function ContactForm() {
           )}
         </div>
 
-        {/* ✅ Utilisation de Controller uniquement pour la checkbox consent */}
-        <div className="flex items-center whitespace-nowrap space-x-2">
+
+        <div className="flex items-center space-x-2">
           <Controller
             name="consent"
             control={control}

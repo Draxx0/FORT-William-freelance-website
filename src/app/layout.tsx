@@ -1,3 +1,4 @@
+import Footer from "@/components/sections/footer";
 import Header from '@/components/sections/header';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -38,9 +39,12 @@ export default function RootLayout({
           enableSystem={false}
         >
           <Header />
-          {children}
+          <main>
+            {children}
+          </main>
           <ThemeToggle />
           <TailwindIndicator />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

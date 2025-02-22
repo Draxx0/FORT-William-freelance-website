@@ -4,7 +4,7 @@ import { constructMetadata } from '@/lib/utils';
 
 export const metadata = constructMetadata({
   title:
-    'Blog de William FORT - - Développement Web & Automatisation pour Optimiser Vos Projets',
+    'Blog de William FORT - Développement Web & Automatisation pour Optimiser Vos Projets',
   description: `Bienvenue sur mon blog, William FORT, freelance développeur, comment le développement web sur mesure et l'automatisation peuvent transformer vos projets. Apprenez à maximiser l'efficacité, la performance et la rentabilité de vos solutions numériques.`,
 });
 
@@ -17,7 +17,7 @@ export default async function Blog() {
 
   return (
     <>
-      <div className="mx-auto w-full max-w-screen-xl px-2.5 lg:px-20 mt-24">
+      <div className="mx-auto w-full max-w-screen-xl px-2.5 lg:px-20 mt-12">
         <div className="text-center py-16">
           <h1 className="text-3xl font-bold text-foreground sm:text-4xl">
             Découvrez comment améliorer vos projets grâce au web et à

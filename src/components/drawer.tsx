@@ -24,10 +24,10 @@ export default function drawerDemo() {
             <Link
               href="/"
               title="brand-logo"
-              className="relative mr-6 flex items-center space-x-2"
+              className="relative mr-6 flex items-center justify-center space-x-2"
             >
-              <Icons.logo className="w-auto h-[40px]" />
-              <span className="font-bold text-xl">{siteConfig.name}</span>
+              <Icons.logo className="w-auto mx-auto h-[40px]" />
+              <span className="font-bold text-xl">William FORT</span>
             </Link>
           </div>
           <nav>
@@ -48,20 +48,14 @@ export default function drawerDemo() {
         </DrawerHeader>
         <DrawerFooter>
           <Link
-            href="/login"
-            className={buttonVariants({ variant: "outline" })}
-          >
-            Login
-          </Link>
-          <Link
-            href="/signup"
+            href="#contact"
             className={cn(
-              buttonVariants({ variant: "default" }),
-              "w-full sm:w-auto text-background flex gap-2"
+              buttonVariants({ variant: 'default' }),
+              'w-full sm:w-auto text-background dark:text-white flex gap-2 transition-all hover:opacity-80 active:scale-[98%] ease-in-out duration-300'
             )}
           >
             <Icons.logo className="h-6 w-6" />
-            Get Started for Free
+            Lancez votre projet
           </Link>
         </DrawerFooter>
       </DrawerContent>
