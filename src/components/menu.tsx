@@ -26,20 +26,19 @@ export default function NavigationMenuDemo() {
                 <NavigationMenuTrigger>{item.trigger}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul
-                    className={`grid gap-3 p-6 ${
-                      item.content.main
-                        ? 'md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'
-                        : 'w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]'
-                    }`}
+                    className={`grid gap-3 p-6 ${item.content.main
+                      ? 'md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'
+                      : 'w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]'
+                      }`}
                   >
                     {item.content.main && (
                       <li className="row-span-3 group">
                         <NavigationMenuLink asChild>
                           <Link
-                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-primary/10 from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-primary/10 from-muted/50 to-muted  no-underline outline-none focus:shadow-md"
                             href={item.content.main.href}
                           >
-                            {item.content.main.icon}
+                            {item.content.main.image}
                             <div className="mb-2 mt-4 text-lg font-medium group-hover:text-primary">
                               {item.content.main.title}
                             </div>
@@ -55,6 +54,7 @@ export default function NavigationMenuDemo() {
                         key={subIndex}
                         href={subItem.href}
                         title={subItem.title}
+                        icon={subItem.icon}
                         className="hover:bg-primary/10"
                       >
                         {subItem.description}
@@ -84,8 +84,8 @@ export default function NavigationMenuDemo() {
 
 const ListItem = React.forwardRef<
   React.ElementRef<'a'>,
-  React.ComponentPropsWithoutRef<'a'>
->(({ className, title, children, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<'a'> & { icon: React.ReactNode }
+>(({ className, title, children, icon, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -97,7 +97,10 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="flex items-center gap-2">
+            {icon}
+            <div className="text-sm font-medium leading-none">{title}</div>
+          </div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>

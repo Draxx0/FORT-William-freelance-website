@@ -1,4 +1,5 @@
-import { Icons } from '@/components/icons';
+import { LayoutPanelTop, Workflow } from "lucide-react";
+import Image from "next/image";
 
 export const BLUR_FADE_DELAY = 0.15;
 
@@ -37,7 +38,7 @@ export const siteConfig = {
       trigger: 'Services',
       content: {
         main: {
-          icon: <Icons.react className="h-6 w-6" />,
+          image: <Image src={"/services.jpg"} alt="Image représentant un service digital" width={150} height={120} className="rounded-md" />,
           title: 'Services',
           description: 'Découvrez les services',
           href: '/services',
@@ -45,13 +46,15 @@ export const siteConfig = {
         items: [
           {
             href: '/services/automatisations',
+            icon: <Workflow className="size-4" />,
             title: 'Automatisation',
-            description: 'Automate repetitive tasks and save time.',
+            description: "L'automatisation optimise les tâches répétitives via des systèmes intelligents, augmentant efficacité, précision et productivité avec moins d'intervention humaine.",
           },
           {
             href: '/services/developpement-de-site-web',
+            icon: <LayoutPanelTop className="size-4" />,
             title: 'Développement web',
-            description: 'Développement de site web',
+            description: "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
           },
         ],
       },
