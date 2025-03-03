@@ -9,7 +9,7 @@ import Ripple from '../magicui/ripple';
 
 const features = [
   {
-    title: 'Création de site web sur-mesure',
+    title: 'Développement de landing pages optimisées',
     description:
       'Je conçois des sites web adaptés à vos besoins, de la maquette à la mise en ligne. Que ce soit pour une vitrine, un portfolio ou une solution plus complexe, chaque site est personnalisé pour refléter votre image et atteindre vos objectifs.',
     className: 'hover:bg-red-500/10 transition-all duration-500 ease-out',
@@ -24,9 +24,9 @@ const features = [
     ),
   },
   {
-    title: 'Design UX/UI personnalisé',
+    title: '    Développement de site e-commerce Shopify',
     description:
-      "Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. Chaque design est pensé pour offrir une navigation fluide, un impact visuel fort et une ergonomie optimale, tout en étant fonctionnel.",
+      "Je développe des landing pages efficaces pour maximiser vos conversions. Chaque page est conçue pour répondre à des objectifs précis, qu’il s’agisse de générer des leads, de promouvoir un produit ou d'engager votre audience.",
     className:
       'order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out',
     content: (
@@ -38,9 +38,9 @@ const features = [
     ),
   },
   {
-    title: 'Développement de landing pages optimisées',
+    title: 'Design UX/UI personnalisé',
     description:
-      "Je développe des landing pages efficaces pour maximiser vos conversions. Chaque page est conçue pour répondre à des objectifs précis, qu’il s’agisse de générer des leads, de promouvoir un produit ou d'engager votre audience.",
+      "Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. Chaque design est pensé pour offrir une navigation fluide, un impact visuel fort et une ergonomie optimale, tout en étant fonctionnel.",
     className:
       'md:row-span-2 hover:bg-orange-500/10 transition-all duration-500 ease-out',
     content: (

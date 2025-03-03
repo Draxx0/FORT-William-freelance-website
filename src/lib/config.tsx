@@ -1,5 +1,5 @@
-import { LayoutPanelTop, Workflow } from "lucide-react";
-import Image from "next/image";
+import { LayoutPanelTop, ShoppingBag, Workflow } from 'lucide-react';
+import Image from 'next/image';
 
 export const BLUR_FADE_DELAY = 0.15;
 
@@ -16,6 +16,8 @@ export const siteConfig = {
     'Tailwind CSS',
     'NestJS',
     'Automatisation',
+    'E-commerce',
+    'Shopify',
     'Make.com',
   ],
   links: {
@@ -38,23 +40,41 @@ export const siteConfig = {
       trigger: 'Services',
       content: {
         main: {
-          image: <Image src={"/services.jpg"} alt="Image représentant un service digital" width={150} height={120} className="rounded-md" />,
+          image: (
+            <Image
+              src={'/services.jpg'}
+              alt="Image représentant un service digital"
+              width={150}
+              height={120}
+              sizes="100vw"
+              className="rounded-md w-full h-full object-cover"
+            />
+          ),
           title: 'Services',
           description: 'Découvrez les services',
           href: '/services',
         },
         items: [
           {
+            href: '/services/site-vitrine',
+            icon: <LayoutPanelTop className="size-4" />,
+            title: 'Site vitrine',
+            description:
+              "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
+          },
+          {
+            href: '/services/site-e-commerce',
+            icon: <ShoppingBag className="size-4" />,
+            title: 'Site e-commerce',
+            description:
+              "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
+          },
+          {
             href: '/services/automatisations',
             icon: <Workflow className="size-4" />,
             title: 'Automatisation',
-            description: "L'automatisation optimise les tâches répétitives via des systèmes intelligents, augmentant efficacité, précision et productivité avec moins d'intervention humaine.",
-          },
-          {
-            href: '/services/developpement-de-site-web',
-            icon: <LayoutPanelTop className="size-4" />,
-            title: 'Développement web',
-            description: "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
+            description:
+              "L'automatisation optimise les tâches répétitives via des systèmes intelligents, augmentant efficacité, précision et productivité avec moins d'intervention humaine.",
           },
         ],
       },

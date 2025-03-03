@@ -13,7 +13,7 @@ const ease = [0.16, 1, 0.3, 1];
 function HeroPill() {
   return (
     <motion.a
-      href="/blog/introducing-acme-ai"
+      href="/blog/pourquoi-l-experience-utilisateur-ux-est-cruciale-pour-le-succes-de-votre-site-web"
       className="flex w-auto items-center space-x-2 rounded-full bg-[#dd3e3e]/10 px-2 py-1 ring-1 ring-accent whitespace-pre"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
