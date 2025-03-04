@@ -44,14 +44,23 @@ export default function Footer() {
       </div>
       <div className="flex flex-col justify-between gap-y-5 md:flex-row md:items-center">
         <ul className="flex flex-col gap-x-5 gap-y-2 text-neutral-500 md:flex-row md:items-center ">
-          {siteConfig.header.map((link, index) => (
-            <li
-              key={index}
-              className="text-[15px]/normal font-medium text-neutral-400 transition-all duration-100 ease-linear hover:text-primary hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-400 hover:dark:text-neutral-100"
-            >
-              <a href={link.href}>{link.label}</a>
-            </li>
-          ))}
+          {siteConfig.header.map((link, index) =>
+            link.trigger ? (
+              <li
+                key={index}
+                className="text-[15px]/normal font-medium text-neutral-400 transition-all duration-100 ease-linear hover:text-primary hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-400 hover:dark:text-neutral-100"
+              >
+                <a href={link.content.main.href}>{link.trigger}</a>
+              </li>
+            ) : (
+              <li
+                key={index}
+                className="text-[15px]/normal font-medium text-neutral-400 transition-all duration-100 ease-linear hover:text-primary hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-400 hover:dark:text-neutral-100"
+              >
+                <a href={link.href}>{link.label}</a>
+              </li>
+            )
+          )}
         </ul>
         <div className="text-[15px]/normal font-medium text-neutral-400 dark:text-neutral-400">
           <p>Tous drois réservés - William FORT ©{new Date().getFullYear()}</p>

@@ -1,16 +1,16 @@
-import { Icons } from "@/components/icons";
-import { buttonVariants } from "@/components/ui/button";
+import { Icons } from '@/components/icons';
+import { buttonVariants } from '@/components/ui/button';
 import {
   Drawer,
   DrawerContent,
   DrawerFooter,
   DrawerHeader,
   DrawerTrigger,
-} from "@/components/ui/drawer";
-import { siteConfig } from "@/lib/config";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { IoMenuSharp } from "react-icons/io5";
+} from '@/components/ui/drawer';
+import { siteConfig } from '@/lib/config';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import { IoMenuSharp } from 'react-icons/io5';
 
 export default function drawerDemo() {
   return (
@@ -35,9 +35,14 @@ export default function drawerDemo() {
               {siteConfig.header.map((item, index) => (
                 <li key={index} className="my-3">
                   {item.trigger ? (
-                    <span className="font-semibold">{item.trigger}</span>
+                    <Link
+                      href={item.content.main.href}
+                      className="font-semibold"
+                    >
+                      {item.trigger}
+                    </Link>
                   ) : (
-                    <Link href={item.href || ""} className="font-semibold">
+                    <Link href={item.href || ''} className="font-semibold">
                       {item.label}
                     </Link>
                   )}

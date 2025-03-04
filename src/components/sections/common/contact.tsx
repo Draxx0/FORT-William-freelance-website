@@ -1,6 +1,6 @@
 import Section from '@/components/section';
+import { Tag } from '@/components/ui/Tag';
 import ContactForm from '../../contact-form';
-import BlurFade from '../../magicui/blur-fade';
 
 export default function ContactSection() {
   return (
@@ -11,11 +11,9 @@ export default function ContactSection() {
       className="bg-primary/10 rounded-xl py-16 px-4"
     >
       <div className="flex flex-col md:flex-row justify-between mt-12 gap-12 md:gap-6">
-        <BlurFade delay={0.2 * 0.2} inView className="w-full md:w-2/5">
+        <div className="w-full md:w-2/5">
           <div className="space-y-4 ">
-            <div className="rounded-full w-fit px-4 py-2 bg-[#dd3e3e]/10 text-primary text-sm font-medium">
-              Contactez-moi 🤝
-            </div>
+            <Tag>Contactez-moi 🤝</Tag>
             <h2 className="text-3xl font-medium">Travaillons ensemble</h2>
             <p className="text-muted-foreground text-sm">
               Je suis disponible pour tout type de projets, professionnel ou
@@ -32,10 +30,10 @@ export default function ContactSection() {
               </a>
             </p>
           </div>
-        </BlurFade>
-        <BlurFade delay={0.6 * 0.6} inView className="flex-1">
+        </div>
+        <div className="flex-1">
           <ContactForm />
-        </BlurFade>
+        </div>
       </div>
     </Section>
   );

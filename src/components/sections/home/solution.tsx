@@ -2,10 +2,14 @@
 
 import Safari from '@/components/safari';
 import Section from '@/components/section';
+import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import FlickeringGrid from '../../magicui/flickering-grid';
 import Ripple from '../../magicui/ripple';
+
+const ease = [0.16, 1, 0.3, 1];
 
 const features = [
   {
@@ -122,6 +126,23 @@ export default function Component() {
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        className="mx-auto mt-6 flex w-fit flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8, duration: 0.8, ease }}
+      >
+        <Link
+          href="#contact"
+          className={cn(
+            buttonVariants({ variant: 'default' }),
+            'mt-12 active:scale-[98%] transition-all ease-in-out duration-300 hover:opacity-80 dark:text-white text-background flex gap-2'
+          )}
+        >
+          Voir les services
+        </Link>
+      </motion.div>
     </Section>
   );
 }

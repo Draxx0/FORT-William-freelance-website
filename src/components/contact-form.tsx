@@ -199,7 +199,6 @@ export default function ContactForm() {
           )}
         </div>
 
-
         <div className="flex items-center space-x-2">
           <Controller
             name="consent"
@@ -260,9 +259,7 @@ export default function ContactForm() {
 
             <div className="p-6 h-full flex flex-col justify-between flex-1">
               <div className="space-y-4">
-                <AlertDialogTitle>
-                  Merci pour votre soumission 🤝
-                </AlertDialogTitle>
+                <AlertDialogTitle>Merci pour votre requête 🤝</AlertDialogTitle>
                 <AlertDialogDescription>
                   Votre message a bien été envoyé. J&apos;ai pris en compte vos
                   informations et je reviendrai vers vous dans les plus brefs

@@ -1,4 +1,5 @@
 import BlogCard from '@/components/blog-card';
+import ContactSection from '@/components/sections/common/contact';
 import { getBlogPosts } from '@/lib/blog';
 import { constructMetadata } from '@/lib/utils';
 
@@ -36,6 +37,8 @@ export default async function Blog() {
           ))}
         </div>
       </div>
+
+      <ContactSection />
     </>
   );
 }
