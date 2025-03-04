@@ -1,6 +1,6 @@
 import Section from '@/components/section';
-import ContactForm from '../contact-form';
-import BlurFade from "../magicui/blur-fade";
+import ContactForm from '../../contact-form';
+import BlurFade from '../../magicui/blur-fade';
 
 export default function ContactSection() {
   return (
@@ -18,12 +18,12 @@ export default function ContactSection() {
             </div>
             <h2 className="text-3xl font-medium">Travaillons ensemble</h2>
             <p className="text-muted-foreground text-sm">
-              Je suis disponible pour tout type de projets, professionnel ou même
-              personnel.
+              Je suis disponible pour tout type de projets, professionnel ou
+              même personnel.
             </p>
             <p className="text-muted-foreground text-sm">
-              Pour toute demande ou question supplémentaire, n&apos;hésitez pas à
-              me contacter par mail à{' '}
+              Pour toute demande ou question supplémentaire, n&apos;hésitez pas
+              à me contacter par mail à{' '}
               <a
                 href="mailto:contact@williamfort.fr"
                 className="text-primary text-sm font-medium mt-4 hover:underline hover:underline-offset-4"

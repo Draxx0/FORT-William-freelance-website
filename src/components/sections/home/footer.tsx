@@ -1,6 +1,6 @@
 import { siteConfig } from '@/lib/config';
 import { Linkedin, Mail } from 'lucide-react';
-import { Icons } from '../icons';
+import { Icons } from '../../icons';
 
 interface Icon {
   icon: JSX.Element;

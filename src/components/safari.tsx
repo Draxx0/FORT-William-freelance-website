@@ -1,10 +1,11 @@
-import { SVGProps } from "react";
+import { SVGProps } from 'react';
 
 export interface SafariProps extends SVGProps<SVGSVGElement> {
   url?: string;
   src?: string;
   width?: number;
   height?: number;
+  imageWidthAuto?: boolean;
 }
 
 export default function Safari({
@@ -12,6 +13,7 @@ export default function Safari({
   url,
   width = 1203,
   height = 753,
+  imageWidthAuto = false,
   ...props
 }: SafariProps) {
   return (
@@ -129,12 +131,13 @@ export default function Safari({
         </g>
         <image
           href={src}
-          width="1200"
+          width={imageWidthAuto ? 'auto' : width}
           height="700"
           x="1"
           y="52"
           preserveAspectRatio="xMidYMid slice"
           clipPath="url(#roundedBottom)"
+          className={imageWidthAuto ? 'w-auto' : ''}
         />
       </g>
       <defs>

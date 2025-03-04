@@ -4,8 +4,8 @@ import Safari from '@/components/safari';
 import Section from '@/components/section';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import FlickeringGrid from '../magicui/flickering-grid';
-import Ripple from '../magicui/ripple';
+import FlickeringGrid from '../../magicui/flickering-grid';
+import Ripple from '../../magicui/ripple';
 
 const features = [
   {
@@ -16,8 +16,8 @@ const features = [
     content: (
       <>
         <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
+          src={`/vitrine-banner.webp`}
+          url="https://williamfort.fr"
           className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
         />
       </>
@@ -31,14 +31,14 @@ const features = [
       'order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out',
     content: (
       <Safari
-        src={`/dashboard.png`}
-        url="https://acme.ai"
-        className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
+        src={`/shopify-banner.webp`}
+        url="https://shop.williamfort.fr"
+        className="-mb-24 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
       />
     ),
   },
   {
-    title: 'Design UX/UI personnalisé',
+    title: "Création d'agent IA",
     description:
       "Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. Chaque design est pensé pour offrir une navigation fluide, un impact visuel fort et une ergonomie optimale, tout en étant fonctionnel.",
     className:
@@ -56,8 +56,9 @@ const features = [
           width={800}
         />
         <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
+          src={`/agenti-ia-banner.png`}
+          imageWidthAuto
+          url="https://agent-ia.williamfort.fr"
           className="-mb-48 ml-12 mt-16 h-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-x-[-10px] transition-all duration-300"
         />
       </>
@@ -73,8 +74,8 @@ const features = [
       <>
         <Ripple className="absolute -bottom-full" />
         <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
+          src={`/automation-banner.png`}
+          url="https://automation.williamfort.fr"
           className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
         />
       </>

@@ -1,5 +1,5 @@
 import Section from '@/components/section';
 
-export const HerroBanner = () => {
+export const HeroBanner = () => {
   return <Section></Section>;
 };

@@ -28,7 +28,7 @@ export default function NavigationMenuDemo() {
                   <ul
                     className={`grid gap-3 p-6 ${
                       item.content.main
-                        ? 'md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'
+                        ? 'md:w-[400px] lg:w-[600px] lg:grid-cols-[.75fr_1fr_1fr]'
                         : 'w-[400px] md:w-[500px] md:grid-cols-2 lg:w-[600px]'
                     }`}
                   >

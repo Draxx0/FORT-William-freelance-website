@@ -1,5 +1,5 @@
 import Author from '@/components/blog-author';
-import ContactSection from '@/components/sections/contact';
+import ContactSection from '@/components/sections/common/contact';
 import { getPost } from '@/lib/blog';
 import { siteConfig } from '@/lib/config';
 import { formatDate } from '@/lib/utils';

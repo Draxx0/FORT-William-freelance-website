@@ -1,4 +1,4 @@
-import { LayoutPanelTop, ShoppingBag, Workflow } from 'lucide-react';
+import { Bot, LayoutPanelTop, ShoppingBag, Workflow } from 'lucide-react';
 import Image from 'next/image';
 
 export const BLUR_FADE_DELAY = 0.15;
@@ -19,6 +19,8 @@ export const siteConfig = {
     'E-commerce',
     'Shopify',
     'Make.com',
+    'N8N',
+    'Agent IA',
   ],
   links: {
     email: 'contact@williamfort.fr',
@@ -75,6 +77,13 @@ export const siteConfig = {
             title: 'Automatisation',
             description:
               "L'automatisation optimise les tâches répétitives via des systèmes intelligents, augmentant efficacité, précision et productivité avec moins d'intervention humaine.",
+          },
+          {
+            href: '/services/agent-ia',
+            icon: <Bot className="size-4" />,
+            title: 'Agent IA',
+            description:
+              'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quae voluptas, nobis quas ipsum alias enim, saepe minima porro doloremque corporis? Nulla tenetur placeat, odio quaerat consectetur aut quibusdam ipsa. Ea veniam soluta ratione quam, natus corrupti fugiat voluptate culpa ad explicabo dolore praesentium eligendi libero! Perferendis odit dicta eaque deserunt, vel illum nostrum aspernatur sapiente, inventore sed exercitationem delectus!',
           },
         ],
       },
