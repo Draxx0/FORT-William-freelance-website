@@ -1,4 +1,5 @@
 import Author from '@/components/blog-author';
+import { ScrollProgress } from '@/components/magicui/scroll-progress';
 import ContactSection from '@/components/sections/common/contact';
 import { getPost } from '@/lib/blog';
 import { siteConfig } from '@/lib/config';
@@ -37,12 +38,6 @@ export async function generateMetadata({
           url: image,
         },
       ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [image],
     },
   };
 }
@@ -118,11 +113,7 @@ export default async function Blog({
           </Suspense>
         </div>
         <div className="flex items-center space-x-2">
-          <Author
-            twitterUsername={post.metadata.author}
-            name={post.metadata.author}
-            image={'/me.png'}
-          />
+          <Author name={post.metadata.author} image={'/me.png'} />
         </div>
         <article
           className="prose dark:prose-invert mx-auto max-w-full"
@@ -131,6 +122,7 @@ export default async function Blog({
       </div>
       <hr className="bg-muted rounded-full h-[1.5px] mx-auto w-full max-w-[800px]"></hr>
       <ContactSection />
+      <ScrollProgress className="top-[55px]" />
     </section>
   );
 }

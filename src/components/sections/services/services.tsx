@@ -18,6 +18,7 @@ const ServicesData = [
       alt: 'VSCODE Logo',
     },
     cta: 'Digitaliser mon activité ',
+    ctaHref: '/services/site-vitrine',
   },
   {
     title: 'Développement de site e-commerce Shopify',
@@ -32,6 +33,7 @@ const ServicesData = [
       alt: 'Shopify Logo',
     },
     cta: 'Vendre mes produits en ligne ',
+    ctaHref: '/services/site-e-commerce',
   },
   {
     title: "Création d'agent IA",
@@ -46,6 +48,7 @@ const ServicesData = [
       alt: 'GPT Logo',
     },
     cta: 'Créer des solutions intelligentes',
+    ctaHref: '/services/agent-ia',
   },
   {
     title: 'Automatisation',
@@ -60,6 +63,7 @@ const ServicesData = [
       alt: 'N8N Logo',
     },
     cta: 'Automatiser mes tâches',
+    ctaHref: '/services/automatisations',
   },
 ];
 
@@ -111,7 +115,7 @@ export const Services = () => {
                 dangerouslySetInnerHTML={{ __html: service.description }}
               />
               <Link
-                href="#contact"
+                href={service.ctaHref}
                 className={cn(
                   buttonVariants({ variant: 'default' }),
                   'w-fit active:scale-[98%] transition-all ease-in-out duration-300 hover:opacity-80 sm:w-auto dark:text-white text-background'

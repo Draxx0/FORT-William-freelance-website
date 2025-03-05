@@ -1,5 +1,5 @@
 import Section from '@/components/section';
-import { Tag } from '@/components/ui/Tag';
+import { Tag } from '@/components/ui/tag';
 import ContactForm from '../../contact-form';
 
 export default function ContactSection() {

@@ -1,17 +1,15 @@
-import { formatDate } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
+import { formatDate } from '@/lib/utils';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Author({
   name,
   image,
-  twitterUsername,
   updatedAt,
   imageOnly,
 }: {
   name: string;
   image: string;
-  twitterUsername: string;
   updatedAt?: string;
   imageOnly?: boolean;
 }) {
@@ -52,7 +50,7 @@ export default function Author({
 
   return (
     <Link
-      href={`https://twitter.com/${twitterUsername}`}
+      href={`https://www.linkedin.com/in/william-fort/`}
       className="group flex items-center space-x-3"
       target="_blank"
       rel="noopener noreferrer"
@@ -66,7 +64,7 @@ export default function Author({
       />
       <div className="flex flex-col">
         <p className="font-semibold text-gray-700">{name}</p>
-        <p className="text-sm text-gray-500">@{twitterUsername}</p>
+        <p className="text-sm text-gray-500">@william-fort</p>
       </div>
     </Link>
   );

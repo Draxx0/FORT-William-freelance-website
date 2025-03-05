@@ -134,7 +134,7 @@ export default function Component() {
         transition={{ delay: 0.8, duration: 0.8, ease }}
       >
         <Link
-          href="#contact"
+          href="/services"
           className={cn(
             buttonVariants({ variant: 'default' }),
             'mt-12 active:scale-[98%] transition-all ease-in-out duration-300 hover:opacity-80 dark:text-white text-background flex gap-2'

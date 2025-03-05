@@ -1,4 +1,5 @@
 import BlogCard from '@/components/blog-card';
+import { BlogPageHeader } from '@/components/blog-page-header';
 import ContactSection from '@/components/sections/common/contact';
 import { getBlogPosts } from '@/lib/blog';
 import { constructMetadata } from '@/lib/utils';
@@ -19,18 +20,9 @@ export default async function Blog() {
   return (
     <>
       <div className="mx-auto w-full max-w-screen-xl px-2.5 lg:px-20 mt-12">
-        <div className="text-center py-16">
-          <h1 className="text-3xl font-bold text-foreground sm:text-4xl">
-            Découvrez comment améliorer vos projets grâce au web et à
-            l’automatisation
-          </h1>
-          <p className="mt-4 text-xl text-muted-foreground">
-            Explorez comment le développement web et l&apos;automatisation
-            peuvent optimiser vos projets et améliorer vos résultats.
-          </p>
-        </div>
+        <BlogPageHeader />
       </div>
-      <div className="min-h-[50vh] bg-white/50 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur-lg">
+      <div className="min-h-[50vh] bg-neutral-100 dark:bg-neutral-900 ">
         <div className="mx-auto grid w-full max-w-screen-xl grid-cols-1 gap-8 px-2.5 py-10 lg:px-20 lg:grid-cols-3">
           {articles.map((data, idx) => (
             <BlogCard key={data.slug} data={data} priority={idx <= 1} />
