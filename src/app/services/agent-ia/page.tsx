@@ -8,7 +8,7 @@ export default function AgentIAPage() {
         tag="Agent IA 🤖"
         title={['Création d’agent IA', 'optimisée pour votre activité']}
         description="Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. J'accompagne les projets de création d'agent IA, de design, de développement, de maintenance et de référencement."
-        cta="Démarrons ensemble"
+        cta="Créons mon agent IA"
         images={[
           { src: '/agenti-ia-banner.png', alt: 'Agent IA' },
           { src: '/agenti-ia-banner.png', alt: 'Agent IA' },

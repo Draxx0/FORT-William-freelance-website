@@ -1,5 +1,6 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
+import { HowItWorks } from '@/components/sections/services/automatisation/how-it-works';
 
 export default function AutomatisationPage() {
   return (
@@ -8,7 +9,7 @@ export default function AutomatisationPage() {
         tag="Automatisation 🔁"
         title={['Création d’automatisation', 'optimisée pour votre activité']}
         description="Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. J'accompagne les projets de création d'agent IA, de design, de développement, de maintenance et de référencement."
-        cta="Démarrons ensemble"
+        cta="Automatisez mes tâches"
         images={[
           { src: '/automation-banner.png', alt: 'Automatisation' },
           { src: '/automation-banner.png', alt: 'Automatisation' },
@@ -23,6 +24,7 @@ export default function AutomatisationPage() {
           ],
         }}
       />
+      <HowItWorks />
       <ContactSection />
     </>
   );
