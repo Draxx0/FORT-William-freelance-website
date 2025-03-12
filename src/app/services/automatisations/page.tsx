@@ -10,10 +10,7 @@ export default function AutomatisationPage() {
         title={['Création d’automatisation', 'optimisée pour votre activité']}
         description="Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. J'accompagne les projets de création d'agent IA, de design, de développement, de maintenance et de référencement."
         cta="Automatisez mes tâches"
-        images={[
-          { src: '/automation-banner.png', alt: 'Automatisation' },
-          { src: '/automation-banner.png', alt: 'Automatisation' },
-        ]}
+        image={{ src: '/automation-banner.png' }}
         breadcrumb={{
           currentPage: 'Automatisation',
           intermediatePages: [

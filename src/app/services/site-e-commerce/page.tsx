@@ -12,10 +12,7 @@ export default function SiteEcommercePage() {
         ]}
         description="Je développe des sites e-commerce optimisés pour votre activité. J'accompagne les projets de création de site vitrine, de design, de développement, de maintenance et de référencement."
         cta="Démarrons ensemble"
-        images={[
-          { src: '/shopify-banner.webp', alt: 'Shopify' },
-          { src: '/shopify-banner.webp', alt: 'Shopify' },
-        ]}
+        image={{ src: '/shopify-banner.webp' }}
         breadcrumb={{
           currentPage: 'Site e-commerce',
           intermediatePages: [

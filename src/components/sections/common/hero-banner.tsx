@@ -1,6 +1,8 @@
 'use client';
 
 import { Icons } from '@/components/icons';
+import { BorderBeam } from "@/components/magicui/border-beam";
+import Safari from "@/components/safari";
 import Section from '@/components/section';
 import {
   Breadcrumb,
@@ -13,7 +15,6 @@ import {
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Tag } from '../../ui/tag';
 
@@ -22,10 +23,9 @@ type Props = {
   title: string[];
   description: string;
   cta: string;
-  images: {
+  image: {
     src: string;
-    alt: string;
-  }[];
+  };
   breadcrumb?: {
     currentPage: string;
     intermediatePages?: {
@@ -42,7 +42,7 @@ export const HeroBanner = ({
   title,
   description,
   cta,
-  images,
+  image,
   breadcrumb,
 }: Props) => {
   return (
@@ -148,27 +148,15 @@ export const HeroBanner = ({
           </motion.div>
         </div>
         <motion.div
-          className="flex-1 relative"
+          className="flex-1"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 1, ease }}
         >
-          <Image
-            src={images[0].src}
-            alt={images[0].alt}
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full max-h-[400px] min-h-[400px] rounded-md shadow-md object-cover"
-          />
-
-          <Image
-            src={images[1].src}
-            alt={images[1].alt}
-            width={200}
-            height={200}
-            className="absolute min-h-[200px] max-h-[200px] object-cover -bottom-8 left-0 md:-left-8 rounded-md shadow-md "
-          />
+          <div className="max-h-[400px] min-h-auto rounded-md shadow-md relative">
+            <Safari url="https://williamfort.fr" src={image.src} className="w-full h-full rounded-md" />
+            <BorderBeam duration={8} size={100} borderWidth={2} />
+          </div>
         </motion.div>
       </div>
     </Section>

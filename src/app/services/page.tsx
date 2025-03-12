@@ -22,16 +22,9 @@ export default function ServicesPage() {
             en ligne et gagner du temps. Concentrez-vous sur l’essentiel, je
             m’occupe du reste !"
         cta=" Démarrons ensemble"
-        images={[
-          {
-            src: '/service-image.jpg',
-            alt: 'Vitrine',
-          },
-          {
-            src: '/service-image.jpg',
-            alt: 'Vitrine',
-          },
-        ]}
+        image={{
+          src: '/service-image.jpg',
+        }}
         breadcrumb={{
           currentPage: 'Services',
         }}
