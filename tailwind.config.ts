@@ -65,6 +65,8 @@ const config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
+        orbit: 'orbit calc(var(--duration) * 1s) linear infinite',
+        ellipticalOrbit: 'elliptical-orbit 20s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -94,6 +96,26 @@ const config = {
           },
           '50%': {
             transform: 'translate(-50%, -50%) scale(0.9)',
+          },
+        },
+        orbit: {
+          '0%': {
+            transform:
+              'rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));',
+          },
+          '100%': {
+            transform:
+              'rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg));',
+          },
+        },
+        ellipticalOrbit: {
+          from: {
+            transform:
+              'rotate(var(--angle, 0)deg) translate(var(--h-radius, 160px), 0) rotate(calc(var(--angle, 0)deg * -1));',
+          },
+          to: {
+            transform:
+              'rotate(calc(var(--angle, 0)deg + 360deg)) translate(var(--h-radius, 160px), 0) rotate(calc((var(--angle, 0)deg + 360deg) * -1));',
           },
         },
       },

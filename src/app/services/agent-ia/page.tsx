@@ -1,5 +1,7 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
+import AgentIaFAQ from '@/components/sections/services/agents-ia/faq';
+import { HowItWorks } from '@/components/sections/services/agents-ia/how-it-works';
 
 export default function AgentIAPage() {
   return (
@@ -20,6 +22,8 @@ export default function AgentIAPage() {
           ],
         }}
       />
+      <HowItWorks />
+      <AgentIaFAQ />
       <ContactSection />
     </>
   );

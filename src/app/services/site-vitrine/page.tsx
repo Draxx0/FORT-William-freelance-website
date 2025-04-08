@@ -1,5 +1,6 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
+import VitrineFAQ from '@/components/sections/services/site-vitrine/faq';
 
 export default function SiteVitrinePage() {
   return (
@@ -23,6 +24,7 @@ export default function SiteVitrinePage() {
           ],
         }}
       />
+      <VitrineFAQ />
       <ContactSection />
     </>
   );

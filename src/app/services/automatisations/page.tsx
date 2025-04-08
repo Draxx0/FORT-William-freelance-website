@@ -1,5 +1,6 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
+import AutomatisationFAQ from '@/components/sections/services/automatisation/faq';
 import { HowItWorks } from '@/components/sections/services/automatisation/how-it-works';
 
 export default function AutomatisationPage() {
@@ -22,6 +23,7 @@ export default function AutomatisationPage() {
         }}
       />
       <HowItWorks />
+      <AutomatisationFAQ />
       <ContactSection />
     </>
   );

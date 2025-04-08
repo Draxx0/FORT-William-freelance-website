@@ -1,5 +1,6 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
+import EcommerceFAQ from '@/components/sections/services/site-e-commerce/faq';
 
 export default function SiteEcommercePage() {
   return (
@@ -23,6 +24,7 @@ export default function SiteEcommercePage() {
           ],
         }}
       />
+      <EcommerceFAQ />
       <ContactSection />
     </>
   );

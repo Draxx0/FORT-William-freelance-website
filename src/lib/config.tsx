@@ -1,3 +1,5 @@
+import { FirstBentoAnimation } from '@/components/first-bento-animation';
+import { SecondBentoAnimation } from '@/components/second-bento-animation';
 import { Bot, LayoutPanelTop, ShoppingBag, Workflow } from 'lucide-react';
 import Image from 'next/image';
 
@@ -116,6 +118,256 @@ export const siteConfig = {
       ),
     },
   ],
+  services: {
+    agentAi: {
+      items: [
+        {
+          id: 1,
+          content: <FirstBentoAnimation />,
+          title: 'Collaboration avec votre agent en temps réel',
+          description:
+            'Profitez d’une assistance en temps réel. Demandez à votre agent de coordonner des tâches, répondre à des questions et maintenir l’alignement de l’équipe.',
+        },
+        {
+          id: 2,
+          content: <SecondBentoAnimation />,
+          title: 'Integrations de multiples outils',
+          description:
+            "Votre agent peut se connecter à une multitude de services permettant d'élargir le champs des possibles",
+        },
+      ],
+      faqs: [
+        {
+          question: 'FAQ 1',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 2',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 3',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+      ],
+    },
+    automatisation: {
+      faqs: [
+        {
+          question: 'FAQ 1',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 2',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 3',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+      ],
+    },
+    eCommerce: {
+      faqs: [
+        {
+          question: 'FAQ 1',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 2',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 3',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+      ],
+    },
+    vitrine: {
+      faqs: [
+        {
+          question: 'FAQ 1',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 2',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+        {
+          question: 'FAQ 3',
+          answer: (
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              ea quam quisquam. Quod excepturi mollitia velit quis eligendi
+              incidunt, fuga eaque fugit rerum quos cum corporis enim
+              doloremque, fugiat sunt. Similique minima iusto maxime ipsum
+              quibusdam esse odio, in cum obcaecati ducimus saepe iure beatae
+              corrupti, at aspernatur molestias tempora hic odit ipsa, eius
+              voluptatem vero eveniet corporis. Error, aliquam! Dolor
+              necessitatibus et explicabo similique eum sit magnam, adipisci
+              alias laboriosam veniam sequi aliquid dolores magni asperiores
+              animi incidunt reprehenderit repellat voluptate excepturi totam
+              qui, praesentium commodi officia sint. Nihil!
+            </span>
+          ),
+        },
+      ],
+    },
+  },
 };
 
 export type SiteConfig = typeof siteConfig;

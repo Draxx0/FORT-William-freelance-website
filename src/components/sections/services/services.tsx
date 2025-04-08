@@ -21,7 +21,7 @@ const ServicesData = [
     ctaHref: '/services/site-vitrine',
   },
   {
-    title: 'Développement de site e-commerce Shopify',
+    title: 'Site e-commerce Shopify',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic libero sed reiciendis a ad non quis aut aperiam vero? Dignissimos officia facilis non reiciendis, reprehenderit expedita sed soluta perferendis!<br /> <br /> Earum modi molestias tempora, ipsum, perspiciatis impedit itaque omnis sed recusandae veritatis ab cupiditate nemo illum aliquam laudantium obcaecati optio, eaque praesentium explicabo magni qui mollitia! Quisquam voluptatem nemo incidunt.',
     image: {
