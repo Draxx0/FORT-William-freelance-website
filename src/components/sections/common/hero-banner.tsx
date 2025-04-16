@@ -102,7 +102,7 @@ export const HeroBanner = ({
             {title.map((text, index) => (
               <motion.span
                 key={index}
-                className="inline-block px-1 md:px-2 text-balance font-semibold"
+                className="inline-block px-1  text-balance font-semibold"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{

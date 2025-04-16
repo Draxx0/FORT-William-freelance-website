@@ -11,8 +11,9 @@ export default function AgentIAPage() {
       <HeroBanner
         tag="Agent IA 🤖"
         title={['Création d’agent IA', 'optimisée pour votre activité']}
-        description="Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. J'accompagne les projets de création d'agent IA, de design, de développement, de maintenance et de référencement."
-        cta="Créons mon agent IA"
+        description="Votre nouveau collègue travaille 24/7.
+        Des agents IA sur-mesure qui comprennent, agissent et automatisent pour vous. Gagnez du temps, améliorez l’expérience client, et passez à la vitesse supérieure."
+        cta="Créons mon Agent"
         image={{ src: '/agenti-ia-banner.png' }}
         breadcrumb={{
           currentPage: 'Création d’agent IA',

@@ -11,8 +11,8 @@ export default function AutomatisationPage() {
       <HeroBanner
         tag="Automatisation 🔁"
         title={['Création d’automatisation', 'optimisée pour votre activité']}
-        description="Je crée des interfaces modernes et intuitives, centrées sur l'expérience utilisateur. J'accompagne les projets de création d'agent IA, de design, de développement, de maintenance et de référencement."
-        cta="Automatisez mes tâches"
+        description="Automatisez, optimisez, libérez du temps. Je conçois des automatisations sur-mesure pour simplifier vos processus et augmenter votre efficacité."
+        cta="Automatiser maintenant"
         image={{ src: '/automation-banner.png' }}
         breadcrumb={{
           currentPage: 'Automatisation',

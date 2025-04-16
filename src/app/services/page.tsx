@@ -17,11 +17,8 @@ export default function ServicesPage() {
           'votre',
           'activité',
         ]}
-        description="Création de sites web performants, automatisation de tâches
-            répétitives… Profitez de mon expertise pour optimiser votre présence
-            en ligne et gagner du temps. Concentrez-vous sur l’essentiel, je
-            m’occupe du reste !"
-        cta=" Démarrons ensemble"
+        description="Des solutions digitales personnalisées pour répondre à vos besoins spécifiques. Je vous aide à optimiser votre présence en ligne, automatiser vos processus et intégrer des outils puissants, le tout sur-mesure, pour booster votre activité et votre efficacité."
+        cta=" Construisons votre solution digitale"
         image={{
           src: '/service-image.jpg',
         }}

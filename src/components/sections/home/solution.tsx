@@ -9,6 +9,7 @@ import Link from 'next/link';
 const ease = [0.16, 1, 0.3, 1];
 
 import { HomeAgentIaServiceDemo } from '@/components/home-animated-agent-ia-list';
+import { Icons } from "@/components/icons";
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
 import Marquee from '@/components/magicui/marquee';
 import { AutomationBean } from '@/components/sections/services/automatisation/automation-bean';
@@ -170,7 +171,7 @@ export default function ServicesHome() {
       <BentoDemo />
 
       <motion.div
-        className="mx-auto mt-6 flex w-fit flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+        className="mx-auto  flex w-fit flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.8, ease }}
@@ -183,6 +184,7 @@ export default function ServicesHome() {
           )}
         >
           Voir les services
+          <Icons.logo className="h-6 w-6" />
         </Link>
       </motion.div>
     </Section>

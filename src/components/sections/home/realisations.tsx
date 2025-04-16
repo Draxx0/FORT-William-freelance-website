@@ -1,34 +1,26 @@
+import BlurFade from "@/components/magicui/blur-fade";
+import { ProjectCard } from "@/components/project-card";
 import Section from '@/components/section';
-import { AirVent, Brain, Droplet, Trees } from 'lucide-react';
 
 const data = [
   {
     id: 1,
     title: 'Institut Spa - Nocibé Mantes & Buchelay',
     content: 'Visualize trends and gain insights at a glance.',
-    image: '/dashboard.png',
-    icon: <Droplet className="h-6 w-6 text-primary" />,
+    video:
+      "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
   },
   {
     id: 2,
     title: 'Eden Health',
     content: 'Analyze text and extract sentiment effortlessly.',
-    image: '/dashboard.png',
-    icon: <Brain className="h-6 w-6 text-primary" />,
+    video: "https://cdn.magicui.design/bento-grid.mp4",
   },
   {
     id: 3,
     title: 'MHCS',
     content: 'Forecast trends and make data-driven decisions.',
-    image: '/dashboard.png',
-    icon: <AirVent className="h-6 w-6 text-primary" />,
-  },
-  {
-    id: 4,
-    title: "La forêt d'acacias",
-    content: 'Generate comprehensive reports with one click.',
-    image: '/dashboard.png',
-    icon: <Trees className="h-6 w-6 text-primary" />,
+    video: "https://cdn.llm.report/openai-demo.mp4",
   },
 ];
 
@@ -39,7 +31,24 @@ export default function Realisations() {
       title="Réalisations"
       subtitle="Des idées transformées en succès."
     >
-      {/* <Features collapseDelay={5000} linePosition="bottom" data={data} /> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+        {data.map((project, i) => (
+          <BlurFade
+            inView
+            key={i}
+            delay={i * 0.05}
+          >
+            <ProjectCard
+              title={project.title}
+              description={project.content}
+              dates={''}
+              image={''}
+              video={project.video}
+              link={''}
+            />
+          </BlurFade>
+        ))}
+      </div>
     </Section>
   );
 }

@@ -14,7 +14,7 @@ export const HowItWorks = () => {
       id="Automatisation"
       title="Automatisation"
       subtitle="Comment ça marche ?"
-      description="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+      description="De l’analyse de vos besoins à la mise en place de solutions automatisées, en toute simplicité."
     >
       <BentoDemo />
     </Section>

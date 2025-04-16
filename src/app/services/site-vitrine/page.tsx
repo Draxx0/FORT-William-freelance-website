@@ -14,8 +14,8 @@ export default function SiteVitrinePage() {
           'Développement de site vitrine',
           'optimisé pour votre activité',
         ]}
-        description="Je développe des sites vitrine optimisés pour votre activité. J'accompagne les projets de création de site vitrine, de design, de développement, de maintenance et de référencement."
-        cta="Démarrons ensemble"
+        description="Un site vitrine pensé pour votre activité. Design soigné, structure optimisée, performance assurée. Votre présence en ligne mérite mieux qu’un template."
+        cta="Je veux un site"
         image={{ src: '/vitrine-banner.webp' }}
         breadcrumb={{
           currentPage: 'Site vitrine',
