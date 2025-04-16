@@ -1,4 +1,3 @@
-import Features from '@/components/features-horizontal';
 import Section from '@/components/section';
 import { AirVent, Brain, Droplet, Trees } from 'lucide-react';
 
@@ -40,7 +39,7 @@ export default function Realisations() {
       title="Réalisations"
       subtitle="Des idées transformées en succès."
     >
-      <Features collapseDelay={5000} linePosition="bottom" data={data} />
+      {/* <Features collapseDelay={5000} linePosition="bottom" data={data} /> */}
     </Section>
   );
 }

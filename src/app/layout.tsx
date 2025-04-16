@@ -33,12 +33,10 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <body
-        className={
-          (cn(
-            'min-h-screen bg-background antialiased w-full mx-auto scroll-smooth'
-          ),
-          inter.className)
-        }
+        className={cn(
+          'min-h-screen bg-background antialiased w-full mx-auto scroll-smooth',
+          inter.className
+        )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />

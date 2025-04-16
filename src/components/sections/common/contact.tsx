@@ -1,5 +1,6 @@
 import Section from '@/components/section';
 import { Tag } from '@/components/ui/tag';
+import { siteConfig } from '@/lib/config';
 import ContactForm from '../../contact-form';
 
 export default function ContactSection() {
@@ -23,10 +24,10 @@ export default function ContactSection() {
               Pour toute demande ou question supplémentaire, n&apos;hésitez pas
               à me contacter par mail à{' '}
               <a
-                href="mailto:contact@williamfort.fr"
+                href={`mailto:${siteConfig.links.email}`}
                 className="text-primary text-sm font-medium mt-4 hover:underline hover:underline-offset-4"
               >
-                contact@williamfort.fr
+                {siteConfig.links.email}
               </a>
             </p>
           </div>

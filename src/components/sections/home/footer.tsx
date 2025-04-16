@@ -12,7 +12,10 @@ const icons: Icon[] = [
     icon: <Linkedin className="w-full h-full" />,
     url: 'https://www.linkedin.com/in/william-fort/',
   },
-  { icon: <Mail className="w-full h-full" />, url: '#' },
+  {
+    icon: <Mail className="w-full h-full" />,
+    url: `mailto:${siteConfig.links.email}`,
+  },
 ];
 
 export default function Footer() {

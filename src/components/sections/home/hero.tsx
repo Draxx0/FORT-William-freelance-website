@@ -55,29 +55,23 @@ function HeroTitles() {
           staggerChildren: 0.2,
         }}
       >
-        {[
-          'Faites',
-          'passer',
-          'vos',
-          'projets',
-          'au',
-          'niveau',
-          ' supérieur.',
-        ].map((text, index) => (
-          <motion.span
-            key={index}
-            className="inline-block px-1 md:px-2 text-balance font-semibold"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              delay: index * 0.2,
-              ease,
-            }}
-          >
-            {text}
-          </motion.span>
-        ))}
+        {['Faites passer', 'vos projets', 'au niveau', 'supérieur.'].map(
+          (text, index) => (
+            <motion.span
+              key={index}
+              className="inline-block px-1 md:px-2 text-balance font-semibold"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: index * 0.2,
+                ease,
+              }}
+            >
+              {text}
+            </motion.span>
+          )
+        )}
       </motion.h1>
       <motion.p
         className="mx-auto max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 text-balance"

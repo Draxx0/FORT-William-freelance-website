@@ -3,7 +3,7 @@ import Section from '@/components/section';
 import { Card, CardContent } from '@/components/ui/card';
 import { Brain, Shield, Zap } from 'lucide-react';
 
-const problems = [
+const defaultProblems = [
   {
     title: '1. Partagez vos besoins',
     description:
@@ -24,10 +24,16 @@ const problems = [
   },
 ];
 
-export default function ProjectsKeySteps() {
+type Props = {
+  problems?: typeof defaultProblems;
+};
+
+export default function ProjectsKeySteps({
+  problems = defaultProblems,
+}: Props) {
   return (
     <Section id="projets" title="Votre projet" subtitle="En trois étapes clés.">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {problems.map((problem, index) => (
           <BlurFade key={index} delay={0.2 + index * 0.2} inView>
             <Card className="bg-background border-none shadow-none">

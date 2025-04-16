@@ -1,6 +1,9 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
+import ProjectsKeySteps from '@/components/sections/home/project-key-steps';
 import VitrineFAQ from '@/components/sections/services/site-vitrine/faq';
+import { WorksList } from '@/components/sections/services/site-vitrine/works-list';
+import { Brain, Monitor, Upload } from 'lucide-react';
 
 export default function SiteVitrinePage() {
   return (
@@ -23,6 +26,29 @@ export default function SiteVitrinePage() {
             },
           ],
         }}
+      />
+      <WorksList />
+      <ProjectsKeySteps
+        problems={[
+          {
+            title: '1. Échange & compréhension',
+            description:
+              'On commence par discuter de votre activité, vos objectifs et le message que vous souhaitez transmettre. L’idée est de bien cerner votre univers pour créer un site qui vous ressemble et parle à votre audience.',
+            icon: Brain,
+          },
+          {
+            title: '2. Conception & développement',
+            description:
+              'Je conçois un design élégant, clair et adapté à tous les écrans, puis je développe un site rapide, sécurisé et évolutif, en m’appuyant sur des technologies modernes. L’objectif : un site vitrine sur-mesure qui reflète votre image et offre une expérience fluide à vos visiteurs.',
+            icon: Monitor,
+          },
+          {
+            title: '3. Mise en ligne & accompagnement',
+            description:
+              'Une fois le site validé, je m’occupe de la mise en ligne. Je reste disponible après le lancement pour les ajustements, les évolutions, ou vous former à la prise en main si besoin.',
+            icon: Upload,
+          },
+        ]}
       />
       <VitrineFAQ />
       <ContactSection />

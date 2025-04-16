@@ -1,6 +1,6 @@
 import { FirstBentoAnimation } from '@/components/first-bento-animation';
 import { SecondBentoAnimation } from '@/components/second-bento-animation';
-import { Bot, LayoutPanelTop, ShoppingBag, Workflow } from 'lucide-react';
+import { Bot, LayoutPanelTop, Workflow } from 'lucide-react';
 import Image from 'next/image';
 
 export const BLUR_FADE_DELAY = 0.15;
@@ -25,7 +25,7 @@ export const siteConfig = {
     'Agent IA',
   ],
   links: {
-    email: 'contact@williamfort.fr',
+    email: 'williamfort.work@gmail.com',
   },
   header: [
     {
@@ -62,13 +62,13 @@ export const siteConfig = {
             description:
               "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
           },
-          {
-            href: '/services/site-e-commerce',
-            icon: <ShoppingBag className="size-4" />,
-            title: 'Site e-commerce',
-            description:
-              "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
-          },
+          // {
+          //   href: '/services/site-e-commerce',
+          //   icon: <ShoppingBag className="size-4" />,
+          //   title: 'Site e-commerce',
+          //   description:
+          //     "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
+          // },
           {
             href: '/services/automatisations',
             icon: <Workflow className="size-4" />,
