@@ -12,7 +12,7 @@ export default function BlogCard({
 }) {
   return (
     <Link href={`/blog/${data.slug}`} className="block">
-      <div className="bg-background max-h-[425px] min-h-[425px] md:max-h-[475px] md:min-h-[475px] rounded-lg p-4 mb-4 border hover:shadow-sm transition-shadow duration-200">
+      <div className="bg-background max-h-[425px] min-h-[425px] md:max-h-[475px] md:min-h-[475px] rounded-lg p-4 mb-4 border hover:border-primary transition-border duration-200">
         {data.image && (
           <Image
             className="rounded-t-lg object-cover w-full h-[200px] border mb-4"
