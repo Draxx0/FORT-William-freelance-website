@@ -1,6 +1,7 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
 import ProjectsKeySteps from '@/components/sections/home/project-key-steps';
+import { AutomatisationsExamples } from '@/components/sections/services/automatisation/automatisation-examples';
 import AutomatisationFAQ from '@/components/sections/services/automatisation/faq';
 import { HowItWorks } from '@/components/sections/services/automatisation/how-it-works';
 import { CheckCircle, Code, Workflow } from 'lucide-react';
@@ -25,6 +26,7 @@ export default function AutomatisationPage() {
         }}
       />
       <HowItWorks />
+      <AutomatisationsExamples />
       <ProjectsKeySteps
         problems={[
           {
