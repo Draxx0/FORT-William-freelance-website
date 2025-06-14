@@ -149,7 +149,6 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-4">
             {[
               'Développer mon site vitrine',
-              'Développer mon site e-commerce',
               'Créer des automatisations',
               "Création d'agent IA",
             ].map((service, i) => (

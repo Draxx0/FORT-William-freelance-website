@@ -13,9 +13,9 @@ export type Prospect = {
 const encodeBase64Url = (str: string) =>
   Buffer.from(str)
     .toString('base64')
-    .replace(/=/g, '') // Supprime les "=" de fin
-    .replace(/\+/g, '-') // Remplace "+" par "-"
-    .replace(/\//g, '_'); // Remplace "/" par "_"
+    .replace(/=/g, '')
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_');
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
   try {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'williamfort.lmgl@gmail.com',
+      to: 'williamfort.work@gmail.com',
       subject: 'Nouvelle demande - Freelance 👨‍💻',
       react: ContactEmail(prospect),
       tags: [
