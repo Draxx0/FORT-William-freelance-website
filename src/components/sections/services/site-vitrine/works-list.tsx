@@ -41,7 +41,7 @@ export const WorksList = () => {
       title="Réalisations"
       subtitle="Des sites de clients satisfait"
     >
-      <ThreeDMarquee className="mt-16" images={images} />
+      <ThreeDMarquee className="mt-8" images={images} />
     </Section>
   );
 };

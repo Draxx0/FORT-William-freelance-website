@@ -15,7 +15,7 @@ const data = [
     id: 2,
     title: '2. Lancement du projet',
     content:
-      'Je développe et mets en place les solutions adaptées : conception du site, design moderne et intuitif, ou automatisation des processus via Make.com. Tout est personnalisé pour vous offrir des résultats concrets.',
+      'Je développe et mets en place les solutions adaptées : conception du site, design moderne et intuitif, ou automatisation des processus via N8N. Tout est personnalisé pour vous offrir des résultats concrets.',
     image: '/dashboard.png',
     icon: <Zap className="w-6 h-6 text-primary" />,
   },

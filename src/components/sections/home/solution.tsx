@@ -9,7 +9,7 @@ import Link from 'next/link';
 const ease = [0.16, 1, 0.3, 1];
 
 import { HomeAgentIaServiceDemo } from '@/components/home-animated-agent-ia-list';
-import { Icons } from "@/components/icons";
+import { Icons } from '@/components/icons';
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
 import Marquee from '@/components/magicui/marquee';
 import { AutomationBean } from '@/components/sections/services/automatisation/automation-bean';
@@ -68,7 +68,7 @@ const features = [
     description: 'Je vous accompagne dans la création de votre site vitrine',
     href: '/services/site-vitrine',
     cta: 'Commencer',
-    className: 'col-span-3 lg:col-span-1',
+    className: 'col-span-4 lg:col-span-2',
     background: (
       <Marquee
         pauseOnHover
@@ -84,7 +84,7 @@ const features = [
     description: 'Je vous accompagne dans la création de votre agent IA',
     href: '/services/agent-ia',
     cta: 'Commencer',
-    className: 'col-span-3 lg:col-span-2',
+    className: 'col-span-4 lg:col-span-2',
     background: (
       <HomeAgentIaServiceDemo className="absolute right-2 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90" />
     ),
@@ -111,7 +111,7 @@ const features = [
     description: 'Automatisation de vos tâches pour améliorer la productivité',
     href: '/services/automatisations',
     cta: 'Commencer',
-    className: 'col-span-3 lg:col-span-4',
+    className: 'col-span-4 lg:col-span-4',
     background: (
       <AutomationBean className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
     ),

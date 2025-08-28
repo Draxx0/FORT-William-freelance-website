@@ -21,6 +21,30 @@ const companies = [
   'Spotify',
 ];
 
+const TESTIMONIALS = [
+  {
+    name: 'Romain BOUVIER',
+    company: "Fondateur de l'agence VeryBerry",
+    quote:
+      'J’ai eu la chance de travailler avec William sur un projet important pour mon entreprise, et je ne peux que recommander ses services. Dès le début, il a été à l’écoute, proactif et force de proposition. Il a parfaitement compris nos besoins et a su les traduire en résultats concrets, dans les délais impartis. Ce que j’ai particulièrement apprécié, c’est son professionnalisme, sa réactivité et son souci du détail. Il a toujours su trouver des solutions aux imprévus, tout en gardant une communication fluide et agréable tout au long du projet. Un vrai partenaire de confiance, avec qui je retravaillerai sans hésiter !',
+    service: 'Automatisation de la gestion des leads',
+  },
+  {
+    name: 'Sophie LEBRUN',
+    company: 'Responsable Marketing chez Bloom Natura',
+    quote:
+      'Nous avons confié à William la création de notre site vitrine, et le résultat a dépassé toutes nos attentes. Il a su parfaitement capter l’essence de notre marque et la retranscrire dans une interface à la fois élégante, moderne et fonctionnelle. Tout a été fluide, de la phase de conception jusqu’à la mise en ligne. William a été très réactif, à l’écoute et toujours force de proposition. Une collaboration hyper agréable et un site qui reflète enfin notre image !',
+    service: 'Création de site vitrine',
+  },
+  {
+    name: 'Julien MARTIN',
+    company: 'CTO chez Lokimo',
+    quote:
+      'Travailler avec William sur le développement de notre agent IA a été une véritable valeur ajoutée pour notre équipe. Il a rapidement compris nos enjeux métiers et proposé une solution performante, capable d’interagir avec nos utilisateurs de manière fluide et contextuelle. Son approche allie rigueur technique, compréhension fine des usages et sens du détail. Une vraie expertise, et une exécution sans accroc. On est déjà en train de prévoir la suite avec lui.',
+    service: 'Développement d’un agent conversationnel IA',
+  },
+];
+
 export default function Component() {
   return (
     <Section
@@ -29,21 +53,16 @@ export default function Component() {
       subtitle="Témoignages de clients satisfaits."
     >
       <Carousel>
-        <div className="max-w-2xl mx-auto relative">
+        <div className="max-w-4xl mx-auto relative">
           <CarouselContent>
-            {Array.from({ length: 7 }).map((_, index) => (
+            {TESTIMONIALS.map((testimonial, index) => (
               <CarouselItem key={index}>
                 <div className="p-2 pb-5">
                   <div className="text-center">
                     <MdOutlineFormatQuote className="text-4xl text-themeDarkGray my-4 mx-auto" />
                     <BlurFade delay={0.25} inView>
-                      <h4 className="text-1xl font-semibold max-w-lg mx-auto px-10">
-                        There is a lot of exciting stuff going on in the stars
-                        above us that make astronomy so much fun. The truth is
-                        the universe is a constantly changing, moving, some
-                        would say “living” thing because you just never know
-                        what you are going to see on any given night of
-                        stargazing.
+                      <h4 className="text-1xl text-justify font-semibold max-w-3xl mx-auto px-10">
+                        {testimonial.quote}
                       </h4>
                     </BlurFade>
                     <BlurFade delay={0.25 * 2} inView>
@@ -63,14 +82,21 @@ export default function Component() {
                     <div className="">
                       <BlurFade delay={0.25 * 3} inView>
                         <h4 className="text-1xl font-semibold my-2">
-                          Romain BOUVIER
+                          {testimonial.name}
                         </h4>
                       </BlurFade>
                     </div>
                     <BlurFade delay={0.25 * 4} inView>
-                      <div className=" mb-3">
+                      <div className="mb-3">
                         <span className="text-sm text-themeDarkGray">
-                          Fondateur de l&apos;agence VeryBerry
+                          {testimonial.company}
+                        </span>
+                      </div>
+                    </BlurFade>
+                    <BlurFade delay={0.25 * 5} inView>
+                      <div className="mb-3">
+                        <span className="text-sm text-primary font-bold">
+                          {testimonial.service}
                         </span>
                       </div>
                     </BlurFade>

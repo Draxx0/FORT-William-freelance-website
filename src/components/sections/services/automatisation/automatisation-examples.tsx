@@ -2,6 +2,7 @@
 import { Icons } from '@/components/icons';
 import { AnimatedBeam } from '@/components/magicui/animated-bean';
 import Section from '@/components/section';
+import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import React, { forwardRef, useRef } from 'react';
 
@@ -55,6 +56,16 @@ export const AutomatisationsExamples = () => {
           ))}
         </div>
       </div>
+
+      <a
+        href="#contact"
+        className={cn(
+          buttonVariants({ variant: 'default' }),
+          'w-full active:scale-[98%] transition-all ease-in-out duration-300 hover:opacity-80 sm:w-fit mx-auto dark:text-white text-background flex gap-2'
+        )}
+      >
+        J&apos;automatise !
+      </a>
     </Section>
   );
 };
