@@ -13,7 +13,7 @@ const defaultProblems = [
   {
     title: '2. Lancement du projet',
     description:
-      'Je développe et mets en place les solutions adaptées : conception du site, design moderne et intuitif, ou automatisation des processus via N8N. Tout est personnalisé pour vous offrir des résultats concrets.',
+      'Je développe et mets en place les solutions adaptées : développement de sites web performants et fonctionnels, ou automatisation des processus via N8N et Make.com. Tout est personnalisé pour vous offrir des résultats concrets.',
     icon: Zap,
   },
   {

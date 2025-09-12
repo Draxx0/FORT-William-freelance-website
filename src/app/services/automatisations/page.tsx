@@ -14,7 +14,7 @@ export default function AutomatisationPage() {
         title={['Création d’automatisation', 'optimisée pour votre activité']}
         description="Automatisez, optimisez, libérez du temps. Je conçois des automatisations sur-mesure pour simplifier vos processus et augmenter votre efficacité."
         cta="Automatiser maintenant"
-        image={{ src: '/automation-banner.png' }}
+        image={{ src: '/automation-banner.jpg' }}
         breadcrumb={{
           currentPage: 'Automatisation',
           intermediatePages: [
@@ -32,7 +32,7 @@ export default function AutomatisationPage() {
           {
             title: '1. Analyse des processus à automatiser',
             description:
-              "Nous commençons par analyser vos processus métiers et identifier les tâches manuelles ou répétitives qui peuvent être automatisées. Que ce soit pour la gestion des emails, des CRM, ou des bases de données, l’objectif est de gagner du temps et d'optimiser vos workflows.",
+              "Je commence par analyser vos processus métiers et identifier les tâches manuelles ou répétitives qui peuvent être automatisées. Que ce soit pour la gestion des emails, des CRM, ou des bases de données, l’objectif est de gagner du temps et d'optimiser vos workflows.",
             icon: Workflow,
           },
           {

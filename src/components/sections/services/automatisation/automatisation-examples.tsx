@@ -45,12 +45,14 @@ export const AutomatisationsExamples = () => {
           {examples.map((example) => (
             <div
               key={example.title}
-              className="flex flex-col items-center w-full gap-2"
+              className="flex flex-col items-center justify-between w-full gap-2 min-h-[275px]"
             >
-              <h3 className="text-2xl font-bold">{example.title}</h3>
-              <p className="text-gray-500 max-w-lg text-center">
-                {example.description}
-              </p>
+              <div className="space-y-4 text-center">
+                <h3 className="text-2xl font-bold">{example.title}</h3>
+                <p className="text-gray-500 max-w-lg text-center">
+                  {example.description}
+                </p>
+              </div>
               {example.code}
             </div>
           ))}

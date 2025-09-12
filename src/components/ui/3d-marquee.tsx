@@ -20,7 +20,7 @@ export const ThreeDMarquee = ({
     <BlurFade
       inView
       className={cn(
-        'mx-auto block h-[600px] overflow-hidden rounded-2xl max-sm:h-100',
+        'mx-auto block h-[600px] border shadow-xl overflow-hidden rounded-2xl max-sm:h-100',
         className
       )}
     >

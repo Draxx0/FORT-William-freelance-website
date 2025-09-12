@@ -1,8 +1,8 @@
 'use client';
 
 import { Icons } from '@/components/icons';
-import { BorderBeam } from "@/components/magicui/border-beam";
-import Safari from "@/components/safari";
+import { BorderBeam } from '@/components/magicui/border-beam';
+import Safari from '@/components/safari';
 import Section from '@/components/section';
 import {
   Breadcrumb,
@@ -33,6 +33,7 @@ type Props = {
       text: string;
     }[];
   };
+  className?: string;
 };
 
 const ease = [0.16, 1, 0.3, 1];
@@ -44,9 +45,10 @@ export const HeroBanner = ({
   cta,
   image,
   breadcrumb,
+  className,
 }: Props) => {
   return (
-    <Section className="mb-24">
+    <Section className={cn('mb-24', className)}>
       {breadcrumb && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -154,7 +156,11 @@ export const HeroBanner = ({
           transition={{ delay: 1.2, duration: 1, ease }}
         >
           <div className="max-h-[400px] min-h-auto rounded-md shadow-md relative">
-            <Safari url="https://williamfort.fr" src={image.src} className="w-full h-full rounded-md" />
+            <Safari
+              url="https://williamfort.fr"
+              src={image.src}
+              className="w-full h-full rounded-md"
+            />
             <BorderBeam duration={8} size={100} borderWidth={2} />
           </div>
         </motion.div>

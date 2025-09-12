@@ -130,7 +130,7 @@ function HeroImage() {
       transition={{ delay: 1.2, duration: 1, ease }}
     >
       <Image
-        src={'/me.png'}
+        src={'/profile.png'}
         alt="Photo de William FORT"
         width={0}
         height={0}

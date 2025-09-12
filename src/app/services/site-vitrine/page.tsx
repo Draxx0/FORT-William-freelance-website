@@ -14,9 +14,10 @@ export default function SiteVitrinePage() {
           'Développement de site vitrine',
           'optimisé pour votre activité',
         ]}
-        description="Un site vitrine pensé pour votre activité. Design soigné, structure optimisée, performance assurée. Votre présence en ligne mérite mieux qu’un template."
+        className="mb-0"
+        description="Un site vitrine pensé pour votre activité. Structure optimisée, performance assurée, fonctionnalités adaptées. Votre présence en ligne mérite mieux qu'un template."
         cta="Je veux un site"
-        image={{ src: '/vitrine-banner.webp' }}
+        image={{ src: '/vitrine-banner.jpg' }}
         breadcrumb={{
           currentPage: 'Site vitrine',
           intermediatePages: [
@@ -39,7 +40,7 @@ export default function SiteVitrinePage() {
           {
             title: '2. Conception & développement',
             description:
-              'Je conçois un design élégant, clair et adapté à tous les écrans, puis je développe un site rapide, sécurisé et évolutif, en m’appuyant sur des technologies modernes. L’objectif : un site vitrine sur-mesure qui reflète votre image et offre une expérience fluide à vos visiteurs.',
+              'Je développe un site rapide, sécurisé et évolutif, en m’appuyant sur des technologies modernes. L’objectif : un site vitrine sur-mesure qui reflète votre image et offre une expérience fluide à vos visiteurs.',
             icon: Monitor,
           },
           {

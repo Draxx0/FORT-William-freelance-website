@@ -8,57 +8,35 @@ import Link from 'next/link';
 
 const ease = [0.16, 1, 0.3, 1];
 
-import { HomeAgentIaServiceDemo } from '@/components/home-animated-agent-ia-list';
 import { Icons } from '@/components/icons';
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
 import Marquee from '@/components/magicui/marquee';
 import { AutomationBean } from '@/components/sections/services/automatisation/automation-bean';
 import { ThreeDMarquee } from '@/components/ui/3d-marquee';
-import { Bot, Globe, Share2Icon } from 'lucide-react';
+import { Globe, Share2Icon } from 'lucide-react';
 
 const images = [
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
-  'https://assets.aceternity.com/cloudinary_bkp/3d-card.png',
-  'https://assets.aceternity.com/animated-modal.png',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
+  '/vitrine-banner.jpg',
 ];
 
 const features = [
@@ -78,17 +56,17 @@ const features = [
       </Marquee>
     ),
   },
-  {
-    Icon: Bot,
-    name: 'Agents IA',
-    description: 'Je vous accompagne dans la création de votre agent IA',
-    href: '/services/agent-ia',
-    cta: 'Commencer',
-    className: 'col-span-4 lg:col-span-2',
-    background: (
-      <HomeAgentIaServiceDemo className="absolute right-2 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90" />
-    ),
-  },
+  // {
+  //   Icon: Bot,
+  //   name: 'Agents IA',
+  //   description: 'Je vous accompagne dans la création de votre agent IA',
+  //   href: '/services/agent-ia',
+  //   cta: 'Commencer',
+  //   className: 'col-span-4 lg:col-span-2',
+  //   background: (
+  //     <HomeAgentIaServiceDemo className="absolute right-2 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90" />
+  //   ),
+  // },
   // {
   //   Icon: ShoppingCart,
   //   name: 'Site e-commerce',
@@ -111,7 +89,7 @@ const features = [
     description: 'Automatisation de vos tâches pour améliorer la productivité',
     href: '/services/automatisations',
     cta: 'Commencer',
-    className: 'col-span-4 lg:col-span-4',
+    className: 'col-span-2 lg:col-span-2',
     background: (
       <AutomationBean className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
     ),

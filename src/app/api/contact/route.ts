@@ -20,6 +20,8 @@ const encodeBase64Url = (str: string) =>
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
+  console.log('body', body);
+
   const prospect: Prospect = body;
 
   if (!prospect) {
@@ -34,8 +36,9 @@ export async function POST(req: NextRequest) {
   try {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'williamfort.work@gmail.com',
-      subject: 'Nouvelle demande - Freelance 👨‍💻',
+      // to: 'williamfort.work@gmail.com',
+      to: 'williamfort.lmgl@gmail.com',
+      subject: `Nouvelle demande de ${prospect.fullName}`,
       react: ContactEmail(prospect),
       tags: [
         {

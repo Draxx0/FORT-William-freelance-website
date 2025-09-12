@@ -25,7 +25,7 @@ export const ContactEmail = ({
     <Html>
       <Head />
       <Body style={main}>
-        <Preview>Nouvelle demande - Freelance 👨‍💻</Preview>
+        <Preview>Nouvelle prise de contact - {fullName}</Preview>
         <Container>
           <Section style={content}>
             <Row style={{ ...boxInfos, paddingBottom: '0', display: 'flex' }}>

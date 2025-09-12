@@ -8,9 +8,9 @@ const ServicesData = [
   {
     title: 'Site vitrine',
     description:
-      "Un site vitrine optimisé pour refléter votre activité et attirer vos clients. Votre présence en ligne est essentielle pour capter de nouveaux prospects et montrer votre expertise. Je vous accompagne dans la création d’un site vitrine moderne, responsive et optimisé pour le SEO.<br /> <br /> Grâce à une conception sur-mesure, je m’assure que votre site reflète parfaitement l'image de votre entreprise, tout en offrant une navigation fluide et une expérience utilisateur agréable. Vous aurez un outil performant pour séduire et convaincre vos visiteurs en ligne, le tout sans compromis sur la vitesse et l’accessibilité.",
+      "Un site vitrine optimisé pour refléter votre activité et attirer vos clients. Votre présence en ligne est essentielle pour capter de nouveaux prospects et montrer votre expertise. Je vous accompagne dans la création d'un site vitrine moderne, responsive et optimisé pour le SEO.<br /> <br /> Grâce à un développement sur-mesure, je m'assure que votre site reflète parfaitement l'image de votre entreprise, tout en offrant une navigation fluide et une expérience utilisateur agréable. Vous aurez un outil performant pour séduire et convaincre vos visiteurs en ligne, le tout sans compromis sur la vitesse et l'accessibilité.",
     image: {
-      src: '/vitrine-banner.webp',
+      src: '/vitrine-banner.jpg',
       alt: 'Vitrine',
     },
     altImage: {
@@ -35,25 +35,27 @@ const ServicesData = [
   //   cta: 'Vendre mes produits en ligne ',
   //   ctaHref: '/services/site-e-commerce',
   // },
-  {
-    title: "Création d'agent IA",
-    description: "Créez un agent IA sur-mesure pour améliorer votre productivité et vos interactions. Un agent IA, c’est bien plus qu’un simple chatbot. C’est un assistant virtuel capable de comprendre, répondre et exécuter des tâches complexes en automatisant des processus.<br /> <br /> Que ce soit pour améliorer le service client, automatiser des réponses ou aider dans la gestion quotidienne, je vous aide à concevoir et à déployer un agent IA parfaitement adapté à vos besoins. Le but ? Vous faire gagner du temps, améliorer l’expérience utilisateur, et augmenter l'efficacité de votre activité.",
-    image: {
-      src: '/agenti-ia-banner.png',
-      alt: 'Agent IA',
-    },
-    altImage: {
-      src: '/gpt-logo.webp',
-      alt: 'GPT Logo',
-    },
-    cta: 'Créer des solutions intelligentes',
-    ctaHref: '/services/agent-ia',
-  },
+  // {
+  //   title: "Création d'agent IA",
+  //   description:
+  //     "Créez un agent IA sur-mesure pour améliorer votre productivité et vos interactions. Un agent IA, c'est bien plus qu'un simple chatbot. C'est un assistant virtuel capable de comprendre, répondre et exécuter des tâches complexes en automatisant des processus.<br /> <br /> Que ce soit pour améliorer le service client, automatiser des réponses ou aider dans la gestion quotidienne, je vous aide à développer et à déployer un agent IA parfaitement adapté à vos besoins. Le but ? Vous faire gagner du temps, améliorer l'expérience utilisateur, et augmenter l'efficacité de votre activité.",
+  //   image: {
+  //     src: '/agenti-ia-banner.png',
+  //     alt: 'Agent IA',
+  //   },
+  //   altImage: {
+  //     src: '/gpt-logo.webp',
+  //     alt: 'GPT Logo',
+  //   },
+  //   cta: 'Créer des solutions intelligentes',
+  //   ctaHref: '/services/agent-ia',
+  // },
   {
     title: 'Automatisation',
-    description: "Optimisez vos processus avec des automatisations intelligentes et personnalisées. Automatiser vos tâches répétitives et chronophages, c’est libérer du temps pour vous concentrer sur ce qui compte vraiment.<br /> <br /> En analysant vos flux de travail, je crée des solutions sur-mesure qui connectent vos outils, automatisent vos processus et vous permettent de gérer plus efficacement vos activités. Que ce soit pour automatiser la gestion des emails, la synchronisation de données ou même des workflows complexes, vous bénéficiez d’une automatisation fiable et optimale, adaptée à vos objectifs.",
+    description:
+      'Optimisez vos processus avec des automatisations intelligentes et personnalisées. Automatiser vos tâches répétitives et chronophages, c’est libérer du temps pour vous concentrer sur ce qui compte vraiment.<br /> <br /> En analysant vos flux de travail, je crée des solutions sur-mesure qui connectent vos outils, automatisent vos processus et vous permettent de gérer plus efficacement vos activités. Que ce soit pour automatiser la gestion des emails, la synchronisation de données ou même des workflows complexes, vous bénéficiez d’une automatisation fiable et optimale, adaptée à vos objectifs.',
     image: {
-      src: '/automation-banner.png',
+      src: '/automation-banner.jpg',
       alt: 'Automatisation',
     },
     altImage: {

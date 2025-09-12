@@ -59,7 +59,6 @@ export const Icons = {
       height={height || 100}
     />
   ),
-
   airtable: ({ width, height }: { width?: number; height?: number }) => (
     <img
       src="/airtable-logo.webp"
@@ -438,6 +437,25 @@ export const Icons = {
     >
       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
       <circle cx="12" cy="7" r="4" />
+    </svg>
+  ),
+  spinner: ({
+    width,
+    height,
+    className,
+  }: {
+    width?: number;
+    height?: number;
+    className?: string;
+  }) => (
+    <svg
+      width={width || 24}
+      height={height || 24}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path d="M12 22c5.421 0 10-4.579 10-10h-2c0 4.337-3.663 8-8 8s-8-3.663-8-8c0-4.337 3.663-8 8-8V2C6.579 2 2 6.579 2 12c0 5.421 4.579 10 10 10z" />
     </svg>
   ),
 };

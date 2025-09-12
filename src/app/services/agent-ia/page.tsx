@@ -31,7 +31,7 @@ export default function AgentIAPage() {
           {
             title: '1. Identification des cas d’usage',
             description:
-              'Nous commençons par analyser ensemble vos besoins. Quelles tâches souhaitez-vous automatiser ? Quelles actions pourraient être déléguées à un agent IA ? Cette étape permet de cibler les cas d’usage concrets pour maximiser l’impact de la solution.',
+              'Je commence par analyser ensemble vos besoins. Quelles tâches souhaitez-vous automatiser ? Quelles actions pourraient être déléguées à un agent IA ? Cette étape permet de cibler les cas d’usage concrets pour maximiser l’impact de la solution.',
             icon: Brain,
           },
           {

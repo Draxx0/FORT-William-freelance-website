@@ -90,7 +90,7 @@ export default async function Blog({
                 height={1080}
                 src={post.metadata.image}
                 alt={post.metadata.title}
-                className="w-full h-auto rounded-lg border shadow-md"
+                className="w-full h-auto max-h-[500px] object-cover object-center rounded-lg border shadow-md"
               />
             </div>
           )}
@@ -113,7 +113,7 @@ export default async function Blog({
           </Suspense>
         </div>
         <div className="flex items-center space-x-2">
-          <Author name={post.metadata.author} image={'/me.png'} />
+          <Author name={post.metadata.author} image={'/profile.png'} />
         </div>
         <article
           className="prose dark:prose-invert mx-auto max-w-full"

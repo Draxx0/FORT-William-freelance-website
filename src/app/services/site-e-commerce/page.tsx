@@ -31,7 +31,7 @@ export default function SiteEcommercePage() {
           {
             title: '1. Analyse des besoins & objectifs',
             description:
-              'Nous commençons par échanger sur vos objectifs de vente en ligne. Quels produits vendez-vous ? Quelle est votre cible ? Je vous aide à définir la meilleure stratégie pour votre boutique en ligne, en tenant compte de vos besoins spécifiques.',
+              'Je commence par échanger sur vos objectifs de vente en ligne. Quels produits vendez-vous ? Quelle est votre cible ? Je vous aide à définir la meilleure stratégie pour votre boutique en ligne, en tenant compte de vos besoins spécifiques.',
             icon: Target,
           },
           {
