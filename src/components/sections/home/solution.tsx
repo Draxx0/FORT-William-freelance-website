@@ -89,7 +89,7 @@ const features = [
     description: 'Automatisation de vos tâches pour améliorer la productivité',
     href: '/services/automatisations',
     cta: 'Commencer',
-    className: 'col-span-2 lg:col-span-2',
+    className: 'col-span-4 lg:col-span-2',
     background: (
       <AutomationBean className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
     ),

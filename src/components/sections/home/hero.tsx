@@ -74,7 +74,7 @@ function HeroTitles() {
         )}
       </motion.h1>
       <motion.p
-        className="mx-auto max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 text-balance"
+        className="mx-auto lg:max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 lg:text-balance"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
