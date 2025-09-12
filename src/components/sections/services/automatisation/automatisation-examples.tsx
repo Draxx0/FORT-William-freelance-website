@@ -47,8 +47,10 @@ export const AutomatisationsExamples = () => {
               key={example.title}
               className="flex flex-col items-center justify-between w-full gap-2 min-h-[275px]"
             >
-              <div className="space-y-4 text-center">
-                <h3 className="text-2xl font-bold">{example.title}</h3>
+              <div className="space-y-4 text-center px-2">
+                <h3 className="text-xl lg:text-2xl font-bold">
+                  {example.title}
+                </h3>
                 <p className="text-gray-500 max-w-lg text-center">
                   {example.description}
                 </p>
@@ -63,10 +65,10 @@ export const AutomatisationsExamples = () => {
         href="#contact"
         className={cn(
           buttonVariants({ variant: 'default' }),
-          'w-full active:scale-[98%] transition-all ease-in-out duration-300 hover:opacity-80 sm:w-fit mx-auto dark:text-white text-background flex gap-2'
+          'w-fit active:scale-[98%] transition-all ease-in-out duration-300 hover:opacity-80 sm:w-fit mx-auto dark:text-white text-background flex gap-2'
         )}
       >
-        J&apos;automatise !
+        J&apos;automatise <Icons.logo />
       </a>
     </Section>
   );
@@ -80,7 +82,7 @@ function LeadsCollect() {
 
   return (
     <div
-      className="relative flex w-full max-w-full mx-auto items-center justify-center overflow-hidden p-10"
+      className="relative flex w-full max-w-full mx-auto items-center justify-center overflow-hidden p-6"
       ref={containerRef}
     >
       <div className="flex size-full flex-col items-stretch justify-between gap-24">
@@ -121,7 +123,7 @@ function InvoiceGeneration() {
   const div4Ref = useRef<HTMLDivElement>(null);
   return (
     <div
-      className="relative flex w-full max-w-full mx-auto items-center justify-center gap-24 overflow-hidden p-10"
+      className="relative flex w-full max-w-full mx-auto items-center justify-center gap-24 overflow-hidden px-3 py-6"
       ref={containerRef}
     >
       <div className="flex size-full flex-col items-stretch justify-between gap-10">
@@ -170,7 +172,7 @@ function PaymentReminder() {
   const div3Ref = useRef<HTMLDivElement>(null);
   return (
     <div
-      className="relative flex w-full max-w-full mx-auto items-center justify-center gap-24 overflow-hidden p-10"
+      className="relative flex w-full max-w-full mx-auto items-center justify-center gap-24 overflow-hidden px-3 py-6"
       ref={containerRef}
     >
       <div className="flex size-full flex-col items-stretch justify-between gap-10">
@@ -212,7 +214,7 @@ function EcommerceFollowUp() {
 
   return (
     <div
-      className="relative flex w-full max-w-full mx-auto items-center justify-center gap-24 overflow-hidden p-10"
+      className="relative flex w-full max-w-full mx-auto items-center justify-center gap-24 overflow-hidden px-3 py-6"
       ref={containerRef}
     >
       <div className="flex size-full flex-col items-stretch justify-between gap-10">
