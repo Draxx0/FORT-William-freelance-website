@@ -51,7 +51,7 @@ const features = [
     description: 'Lancement automatique de tâches',
     href: '#',
     cta: 'Commencer',
-    className: 'col-span-3 lg:col-span-2',
+    className: 'col-span-4 lg:col-span-2',
     background: (
       <AnimatedListAutomation className="absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90" />
     ),
@@ -63,7 +63,7 @@ const features = [
       'Automatisez la sauvegarde de vos fichiers, factures et documents importants.',
     href: '#',
     cta: 'En savoir plus',
-    className: 'col-span-3 lg:col-span-2',
+    className: 'col-span-4 lg:col-span-2',
     background: (
       <Marquee
         pauseOnHover
@@ -98,7 +98,7 @@ const features = [
     description: 'Automatisation de tâches pour améliorer la productivité',
     href: '#',
     cta: 'Commencer',
-    className: 'col-span-3 lg:col-span-4',
+    className: 'col-span-4 lg:col-span-4',
     background: (
       <AutomationBean className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
     ),
