@@ -1,3 +1,4 @@
+import BlurFade from '@/components/magicui/blur-fade';
 import Section from '@/components/section';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -78,7 +79,9 @@ export const Services = () => {
       <div className="space-y-24 mt-24">
         {' '}
         {ServicesData.map((service, i) => (
-          <div
+          <BlurFade
+            inView
+            delay={i * 0.05}
             key={i}
             className={cn(
               'flex justify-between items-center flex-col md:flex-row gap-12 md:ap-24',
@@ -123,7 +126,7 @@ export const Services = () => {
                 {service.cta}
               </Link>
             </div>
-          </div>
+          </BlurFade>
         ))}
       </div>
     </Section>
