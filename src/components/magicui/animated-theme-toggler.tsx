@@ -15,6 +15,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
   const changeTheme = async () => {
     if (!buttonRef.current) return;
 
+    // @ts-ignore - startViewTransition is a new API not yet in TypeScript definitions
     await document.startViewTransition(() => {
       flushSync(() => {
         const dark = document.documentElement.classList.toggle('dark');
