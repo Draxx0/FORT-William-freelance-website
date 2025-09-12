@@ -147,7 +147,7 @@ export default function ContactForm() {
         <div>
           <Label className="font-bold">Service(s) sollicité(s)</Label>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-4">
-            {['Développer mon site', 'Créer mon automatisation'].map(
+            {['Développer mon site', 'Créer mon automatisation', 'Autre'].map(
               (service, i) => (
                 <Controller
                   key={i}

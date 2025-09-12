@@ -2,7 +2,6 @@ import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
 import ProjectsKeySteps from '@/components/sections/home/project-key-steps';
 import VitrineFAQ from '@/components/sections/services/site-vitrine/faq';
-import { WorksList } from '@/components/sections/services/site-vitrine/works-list';
 import { Brain, Monitor, Upload } from 'lucide-react';
 
 export default function SiteVitrinePage() {
@@ -28,7 +27,7 @@ export default function SiteVitrinePage() {
           ],
         }}
       />
-      <WorksList />
+      {/* <WorksList /> */}
       <ProjectsKeySteps
         problems={[
           {

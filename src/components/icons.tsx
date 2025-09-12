@@ -1,13 +1,14 @@
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
-  logo: (props: IconProps) => (
+  logo: ({ className }: { className?: string }) => (
     <svg
       width="36"
       height="36"
       viewBox="0 0 80 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M50.9062 25.0547H63.8672V46.7578C63.8672 50.2109 63.0781 52.75 61.5 54.375C59.7656 56.125 56.9297 57 52.9922 57H50.9062V25.0547ZM16.125 25.0547H29.0859V57H27C21.2344 57 17.7969 55.0469 16.6875 51.1406C16.3125 49.875 16.125 48.4141 16.125 46.7578V25.0547ZM33.4922 25.0781H46.5234V57.0234H33.4922V25.0781Z"

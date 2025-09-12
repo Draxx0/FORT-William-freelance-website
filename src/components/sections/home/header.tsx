@@ -2,6 +2,7 @@
 
 import Drawer from '@/components/drawer';
 import { Icons } from '@/components/icons';
+import { AnimatedThemeToggler } from '@/components/magicui/animated-theme-toggler';
 import Menu from '@/components/menu';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -44,16 +45,20 @@ export default function Header() {
               <Menu />
             </nav>
 
-            <Link
-              href="#contact"
-              className={cn(
-                buttonVariants({ variant: 'default' }),
-                'w-full sm:w-auto text-background dark:text-white flex gap-2 transition-all hover:opacity-80 active:scale-[98%] ease-in-out duration-300'
-              )}
-            >
-              Lancez votre projet
-              <Icons.logo className="h-6 w-6" />
-            </Link>
+            <div className="flex items-center gap-4">
+              <AnimatedThemeToggler className="p-2 rounded-md hover:bg-accent transition-colors" />
+
+              <Link
+                href="#contact"
+                className={cn(
+                  buttonVariants({ variant: 'default' }),
+                  'w-full sm:w-auto text-background dark:text-white flex gap-2 transition-all hover:opacity-80 active:scale-[98%] ease-in-out duration-300'
+                )}
+              >
+                Lancez votre projet
+                <Icons.logo className="h-6 w-6" />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-2 cursor-pointer block lg:hidden">

@@ -2,7 +2,6 @@ import Footer from '@/components/sections/home/footer';
 import Header from '@/components/sections/home/header';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { ThemeProvider } from '@/components/theme-provider';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { cn, constructMetadata } from '@/lib/utils';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
@@ -41,7 +40,6 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           <main>{children}</main>
-          <ThemeToggle />
           <TailwindIndicator />
           <Footer />
         </ThemeProvider>

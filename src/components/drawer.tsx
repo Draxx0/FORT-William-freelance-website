@@ -1,4 +1,5 @@
 import { Icons } from '@/components/icons';
+import { AnimatedThemeToggler } from '@/components/magicui/animated-theme-toggler';
 import { buttonVariants } from '@/components/ui/button';
 import {
   Drawer,
@@ -20,15 +21,16 @@ export default function drawerDemo() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="px-6">
-          <div className="">
+          <div className="flex items-center justify-between">
             <Link
               href="/"
               title="brand-logo"
               className="relative mr-6 flex items-center justify-center space-x-2"
             >
-              <Icons.logo className="w-auto mx-auto h-[40px]" />
+              <Icons.logo className="w-auto mx-auto h-[30px] bg-primary rounded-full" />
               <span className="font-bold text-xl">William FORT</span>
             </Link>
+            <AnimatedThemeToggler className="p-2 rounded-md hover:bg-accent transition-colors" />
           </div>
           <nav>
             <ul className="mt-7 text-left">
