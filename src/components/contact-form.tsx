@@ -35,6 +35,7 @@ const formSchema = z.object({
   consent: z.boolean().refine((value) => value === true, {
     message: 'Veuillez accepter les conditions.',
   }),
+  marketing: z.boolean().optional(),
 });
 
 export default function ContactForm() {
@@ -69,6 +70,7 @@ export default function ContactForm() {
           fullName: '',
           services: [],
           consent: false,
+          marketing: false,
         });
       } catch (error) {
         console.log(error);
@@ -199,31 +201,61 @@ export default function ContactForm() {
           )}
         </div>
 
-        <div className="flex items-center space-x-2">
-          <Controller
-            name="consent"
-            control={control}
-            defaultValue={false}
-            rules={{ required: 'Veuillez accepter les conditions.' }}
-            render={({ field }) => (
-              <Checkbox
-                id="consent"
-                checked={field.value ?? false}
-                onCheckedChange={(checked) => field.onChange(checked === true)}
-              />
-            )}
-          />
-          <label
-            htmlFor="consent"
-            className="select-none cursor-pointer text-sm"
-          >
-            J&apos;accepte que mes informations soient stockées et utilisées
-            pour être recontacté(e).
-          </label>
+        <div className="space-y-4">
+          <div className="flex items-center space-x-2">
+            <Controller
+              name="consent"
+              control={control}
+              defaultValue={false}
+              rules={{ required: 'Veuillez accepter les conditions.' }}
+              render={({ field }) => (
+                <Checkbox
+                  id="consent"
+                  checked={field.value ?? false}
+                  onCheckedChange={(checked) =>
+                    field.onChange(checked === true)
+                  }
+                />
+              )}
+            />
+            <label
+              htmlFor="consent"
+              className="select-none cursor-pointer text-sm"
+            >
+              J&apos;accepte que mes informations soient stockées et utilisées
+              pour être recontacté(e).
+            </label>
+          </div>
+          {errors.consent && (
+            <p className="text-red-500 text-sm mt-2">
+              {errors.consent.message}
+            </p>
+          )}
+
+          <div className="flex items-center space-x-2">
+            <Controller
+              name="marketing"
+              control={control}
+              defaultValue={false}
+              render={({ field }) => (
+                <Checkbox
+                  id="marketing"
+                  checked={field.value ?? false}
+                  onCheckedChange={(checked) =>
+                    field.onChange(checked === true)
+                  }
+                />
+              )}
+            />
+            <label
+              htmlFor="marketing"
+              className="select-none cursor-pointer text-sm"
+            >
+              J&apos;accepte de recevoir des informations et offres de la part
+              de William FORT
+            </label>
+          </div>
         </div>
-        {errors.consent && (
-          <p className="text-red-500 text-sm mt-2">{errors.consent.message}</p>
-        )}
 
         <Button
           type="submit"

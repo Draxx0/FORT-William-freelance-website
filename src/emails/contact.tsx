@@ -12,14 +12,13 @@ import {
   Text,
 } from '@react-email/components';
 
-const websiteUrl = 'https://williamfort.fr';
-
 export const ContactEmail = ({
   email,
   fullName,
   message,
   phone,
   services,
+  marketing,
 }: Prospect) => {
   return (
     <Html>
@@ -77,6 +76,10 @@ export const ContactEmail = ({
                 <Text style={{ ...paragraph, marginTop: -5 }}>
                   <b>Message : </b>
                   {message}
+                </Text>
+                <Text style={{ ...paragraph, marginTop: -5 }}>
+                  <b>Marketing accepté : </b>
+                  {marketing ? '✅ Oui' : '❌ Non'}
                 </Text>
               </Column>
             </Row>
