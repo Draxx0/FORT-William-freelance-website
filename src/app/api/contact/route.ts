@@ -22,8 +22,6 @@ const encodeBase64Url = (str: string) =>
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
-  console.log('body', body);
-
   const prospect: Prospect = body;
 
   const getClientIP = (): string => {
@@ -58,7 +56,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'noreply@williamfort.fr',
+      from: 'hello@williamfort.fr',
       to: 'williamfort.work@gmail.com',
       subject: `Nouvelle demande de ${prospect.fullName}`,
       react: ContactEmail(prospect),
