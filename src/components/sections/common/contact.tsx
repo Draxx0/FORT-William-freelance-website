@@ -9,7 +9,7 @@ export default function ContactSection() {
       id="contact"
       title="Contact"
       subtitle="Prêt à faire décoller votre activité ?"
-      className="bg-primary/10 rounded-xl py-16 px-4"
+      className="bg-primary/10 rounded-xl py-2 md:py-16 px-4"
     >
       <div className="flex flex-col md:flex-row justify-between mt-12 gap-12 md:gap-6">
         <div className="w-full md:w-2/5">
