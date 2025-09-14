@@ -70,7 +70,6 @@ export default function ContactForm() {
           fullName: '',
           services: [],
           consent: false,
-          marketing: false,
         });
       } catch (error) {
         console.log(error);
@@ -231,30 +230,6 @@ export default function ContactForm() {
               {errors.consent.message}
             </p>
           )}
-
-          <div className="flex items-center space-x-2">
-            <Controller
-              name="marketing"
-              control={control}
-              defaultValue={false}
-              render={({ field }) => (
-                <Checkbox
-                  id="marketing"
-                  checked={field.value ?? false}
-                  onCheckedChange={(checked) =>
-                    field.onChange(checked === true)
-                  }
-                />
-              )}
-            />
-            <label
-              htmlFor="marketing"
-              className="select-none cursor-pointer text-sm"
-            >
-              J&apos;accepte de recevoir des informations et offres de la part
-              de William FORT
-            </label>
-          </div>
         </div>
 
         <Button
