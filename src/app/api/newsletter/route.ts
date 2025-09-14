@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
 
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    const confirmationUrl = `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/newsletter/confirm?token=${confirmationToken}&email=${encodeURIComponent(email)}`;
+    const confirmationUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/api/newsletter/confirm?token=${confirmationToken}&email=${encodeURIComponent(email)}`;
 
     const { data: emailData, error: emailError } = await resend.emails.send({
       from: 'hello@williamfort.fr',
