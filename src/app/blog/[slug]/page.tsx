@@ -1,6 +1,7 @@
 import Author from '@/components/blog-author';
 import { ScrollProgress } from '@/components/magicui/scroll-progress';
 import ContactSection from '@/components/sections/common/contact';
+import { Newsletter } from '@/components/sections/common/newsletter';
 import { getPost } from '@/lib/blog';
 import { siteConfig } from '@/lib/config';
 import { formatDate } from '@/lib/utils';
@@ -120,6 +121,7 @@ export default async function Blog({
           dangerouslySetInnerHTML={{ __html: post.source }}
         ></article>
       </div>
+      <Newsletter />
       <hr className="bg-muted rounded-full h-[1.5px] mx-auto w-full max-w-[800px]"></hr>
       <ContactSection />
       <ScrollProgress className="top-[55px]" />
