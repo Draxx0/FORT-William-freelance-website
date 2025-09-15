@@ -68,8 +68,8 @@ export const Newsletter = () => {
 
   return (
     <section id="newsletter">
-      <div className="px-5 py-14 lg:px-0">
-        <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-y-5 rounded-2xl border border-slate-500/20 bg-neutral-50 p-10 shadow-inner dark:bg-neutral-900">
+      <div className="px-5 py-5 md:py-14 lg:px-0">
+        <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-y-5 rounded-2xl border border-slate-500/20 bg-neutral-50 p-5 md:p-10 shadow-inner dark:bg-neutral-900">
           <h3 className="mx-auto max-w-2xl text-balance text-center text-2xl font-bold text-neutral-800 dark:text-white md:text-3xl lg:text-4xl">
             Restez informé de mes derniers articles et conseils
           </h3>
@@ -82,7 +82,7 @@ export const Newsletter = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex w-full max-w-md flex-col gap-4"
           >
-            <div className="flex gap-2">
+            <div className="flex flex-col md:flex-row gap-2">
               <Input
                 {...register('email')}
                 type="email"
@@ -90,11 +90,18 @@ export const Newsletter = () => {
                 className="flex-1"
                 disabled={isPending}
               />
-              <Button type="submit" disabled={isPending} className="px-6">
+              <Button
+                type="submit"
+                disabled={isPending}
+                className="px-6 hover:opacity-80 active:scale-[98%] transition-all ease-in-out duration-300"
+              >
                 {isPending ? (
                   <Icons.spinner className="h-5 w-5 animate-spin" />
                 ) : (
-                  "S'inscrire"
+                  <>
+                    <Icons.logo className="size-8" />
+                    S&apos;inscrire
+                  </>
                 )}
               </Button>
             </div>
