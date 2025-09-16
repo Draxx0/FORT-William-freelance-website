@@ -47,7 +47,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col justify-between gap-y-5 md:flex-row md:items-center">
         <ul className="flex flex-col gap-x-5 gap-y-2 text-neutral-500 md:flex-row md:items-center ">
-          {siteConfig.header.map((link, index) =>
+          {siteConfig.footer.map((link, index) =>
             link.trigger ? (
               <li
                 key={index}

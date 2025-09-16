@@ -106,6 +106,71 @@ export const siteConfig = {
       label: 'Blog',
     },
   ],
+  footer: [
+    {
+      href: '/',
+      label: 'Accueil',
+    },
+    {
+      href: '/#projets',
+      label: 'Votre projet',
+    },
+    {
+      trigger: 'Services',
+      content: {
+        main: {
+          image: (
+            <Image
+              src={'/services.jpg'}
+              alt="Image représentant un service digital"
+              width={150}
+              height={120}
+              sizes="100vw"
+              className="rounded-md w-full h-full object-cover"
+            />
+          ),
+          title: 'Services',
+          description: 'Découvrez les services',
+          href: '/services',
+        },
+        items: [
+          {
+            href: '/services/site-vitrine',
+            icon: <LayoutPanelTop className="size-4" />,
+            title: 'Site vitrine',
+            description:
+              "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
+          },
+          {
+            href: '/services/automatisations',
+            icon: <Workflow className="size-4" />,
+            title: 'Automatisation',
+            description:
+              "L'automatisation optimise les tâches répétitives via des systèmes intelligents, augmentant efficacité, précision et productivité avec moins d'intervention humaine.",
+          },
+          {
+            href: '/services',
+            icon: <Clock className="size-4" />,
+            title: 'À venir',
+            description:
+              'Je me forme continuellement sur de nombreux sujets technologiques. De nouveaux services innovants pourraient bientôt rejoindre mon offre pour répondre à vos besoins évolutifs.',
+          },
+        ],
+      },
+    },
+    {
+      href: '/blog',
+      label: 'Blog',
+    },
+    {
+      href: '/mentions-legales',
+      label: 'Mentions légales',
+    },
+    {
+      href: '/politique-de-confidentialite',
+      label: 'Politique de confidentialité',
+    },
+  ],
   faqs: [
     {
       question: 'FAQ',
