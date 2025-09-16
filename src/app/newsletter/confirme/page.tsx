@@ -1,4 +1,13 @@
+import { Metadata } from 'next';
 import { Suspense } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Inscription confirmée',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function ConfirmationPage({
   searchParams,
