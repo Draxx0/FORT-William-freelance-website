@@ -34,7 +34,7 @@ export default function drawerDemo() {
           </div>
           <nav>
             <ul className="mt-7 text-left">
-              {siteConfig.header.map((item, index) => (
+              {siteConfig.footer.map((item, index) => (
                 <li key={index} className="my-3">
                   {item.trigger ? (
                     <Link
