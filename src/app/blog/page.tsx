@@ -1,5 +1,5 @@
-import BlogCard from '@/components/blog-card';
 import { BlogPageHeader } from '@/components/blog-page-header';
+import { BlogPostList } from '@/components/sections/common/blog-post-list';
 import ContactSection from '@/components/sections/common/contact';
 import { getBlogPosts } from '@/lib/blog';
 import { constructMetadata } from '@/lib/utils';
@@ -13,9 +13,11 @@ export const metadata = constructMetadata({
 export default async function Blog() {
   const allPosts = await getBlogPosts();
 
-  const articles = await Promise.all(
-    allPosts.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+  const sortedPosts = allPosts.sort((a, b) =>
+    b.publishedAt.localeCompare(a.publishedAt)
   );
+
+  const initialPosts = sortedPosts.slice(0, 6);
 
   return (
     <>
@@ -23,10 +25,8 @@ export default async function Blog() {
         <BlogPageHeader />
       </div>
       <div className="min-h-[50vh] bg-neutral-100 dark:bg-neutral-900 ">
-        <div className="mx-auto grid w-full max-w-screen-xl grid-cols-1 gap-8 px-2.5 py-10 lg:px-20 lg:grid-cols-3">
-          {articles.map((data, idx) => (
-            <BlogCard key={data.slug} data={data} priority={idx <= 1} />
-          ))}
+        <div className="mx-auto w-full max-w-screen-xl px-2.5 py-10 lg:px-20">
+          <BlogPostList initialPosts={initialPosts} allPosts={sortedPosts} />
         </div>
       </div>
 

@@ -11,35 +11,39 @@ export default function BlogCard({
   priority?: boolean;
 }) {
   return (
-    <Link href={`/blog/${data.slug}`} className="block">
-      <div className="bg-background max-h-[450px] min-h-[450px] md:max-h-[475px] md:min-h-[475px] rounded-lg p-4 mb-4 border hover:border-primary transition-border duration-200">
+    <Link href={`/blog/${data.slug}`} className="block group">
+      <div className="bg-background flex flex-col justify-between max-h-[400px] min-h-[400px] md:max-h-[500px] md:min-h-[500px] border transition-all duration-300 overflow-hidden">
         {data.image && (
-          <Image
-            className="rounded-t-lg object-cover w-full h-[200px] border mb-4"
-            src={data.image}
-            width={100}
-            height={100}
-            sizes="100vw"
-            alt={data.title}
-            priority={priority}
-          />
+          <div className="overflow-hidden mb-2">
+            <Image
+              className="object-cover w-full h-[200px] border transition-transform duration-300 group-hover:scale-110"
+              src={data.image}
+              width={100}
+              height={100}
+              sizes="100vw"
+              alt={data.title}
+              priority={priority}
+            />
+          </div>
         )}
-        {!data.image && <div className="bg-gray-200 h-[100px] mb-4 rounded" />}
-        <div className="flex-1">
-          {' '}
+        {!data.image && <div className="bg-gray-200 h-[100px] mb-2" />}
+        <div className="flex-1 h-full  p-4 flex flex-col justify-between">
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold mb-2 transition-all duration-300 group-hover:underline group-hover:underline-offset-2">
+              {data.title}
+            </h3>
+            <p className="text-muted-foreground mb-4 line-clamp-4">
+              {data.summary}
+            </p>
+          </div>
+
           <p className="mb-2">
             <time
               dateTime={data.publishedAt}
-              className="text-sm text-muted-foreground"
+              className="text-sm text-foreground"
             >
               {formatDate(data.publishedAt)}
             </time>
-          </p>
-          <h3 className="text-xl font-semibold mb-2">{data.title}</h3>
-          <p className="text-foreground mb-4">
-            {data.summary.length > 120
-              ? data.summary.slice(0, 120) + '...'
-              : data.summary}
           </p>
         </div>
       </div>

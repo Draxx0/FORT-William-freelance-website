@@ -13,7 +13,7 @@ export default async function BlogSection() {
 
   return (
     <Section title="Blog" subtitle="Derniers articles">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((data, idx) => (
           <BlogCard key={data.slug} data={data} priority={idx <= 1} />
         ))}
