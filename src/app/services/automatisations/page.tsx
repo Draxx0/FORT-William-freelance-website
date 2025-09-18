@@ -14,7 +14,7 @@ export default function AutomatisationPage() {
         title={['Création d’automatisation', 'optimisée pour votre activité']}
         description="Automatisez, optimisez, libérez du temps. Je conçois des automatisations sur-mesure pour simplifier vos processus et augmenter votre efficacité."
         cta="Automatiser maintenant"
-        image={{ src: '/automation-banner.jpg' }}
+        image={{ src: '/automation-banner.png' }}
         breadcrumb={{
           currentPage: 'Automatisation',
           intermediatePages: [

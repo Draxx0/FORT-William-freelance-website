@@ -56,7 +56,7 @@ const ServicesData = [
     description:
       'Optimisez vos processus avec des automatisations intelligentes et personnalisées. Automatiser vos tâches répétitives et chronophages, c’est libérer du temps pour vous concentrer sur ce qui compte vraiment.<br /> <br /> En analysant vos flux de travail, je crée des solutions sur-mesure qui connectent vos outils, automatisent vos processus et vous permettent de gérer plus efficacement vos activités. Que ce soit pour automatiser la gestion des emails, la synchronisation de données ou même des workflows complexes, vous bénéficiez d’une automatisation fiable et optimale, adaptée à vos objectifs.',
     image: {
-      src: '/automation-banner.jpg',
+      src: '/automation-banner.png',
       alt: 'Automatisation',
     },
     altImage: {
