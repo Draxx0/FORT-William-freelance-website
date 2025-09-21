@@ -25,6 +25,7 @@ export default function Safari({
       viewBox={`0 0 ${width} ${height}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-auto max-w-full"
       {...props}
     >
       <g clipPath="url(#path0)">
@@ -133,18 +134,22 @@ export default function Safari({
         </g>
         {videoUrl ? (
           <foreignObject
-            width={imageWidthAuto ? 'auto' : width}
-            height="700"
+            width="100%"
+            height="100%"
             x="1"
             y="52"
             clipPath="url(#roundedBottom)"
-            className={imageWidthAuto ? 'w-auto' : ''}
+            className="w-full h-full"
           >
             <video
               src={videoUrl}
-              width={imageWidthAuto ? 'auto' : width}
-              height="700"
-              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              style={{
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%',
+                maxWidth: '100%',
+                maxHeight: '100%',
+              }}
               autoPlay
               muted
               loop
@@ -154,13 +159,13 @@ export default function Safari({
         ) : (
           <image
             href={src}
-            width={imageWidthAuto ? 'auto' : width}
-            height="700"
+            width="100%"
+            height="100%"
             x="1"
             y="52"
             preserveAspectRatio="xMidYMid slice"
             clipPath="url(#roundedBottom)"
-            className={imageWidthAuto ? 'w-auto' : ''}
+            className="w-full h-full"
           />
         )}
       </g>
