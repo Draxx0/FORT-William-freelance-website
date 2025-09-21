@@ -185,6 +185,56 @@ export const siteConfig = {
       label: 'Politique de confidentialité',
     },
   ],
+  faqs: [
+    {
+      question: 'Quels types de services proposez-vous ?',
+      answer: (
+        <span>
+          Je propose principalement trois types de services : la création de
+          sites vitrines modernes et performants, le développement
+          d&apos;applications web sur-mesure, et la mise en place de solutions
+          d&apos;automatisation. Chaque service est adapté aux besoins
+          spécifiques de mes clients, avec un focus sur la qualité et
+          l&apos;innovation.
+        </span>
+      ),
+    },
+    {
+      question: 'Comment se déroule un projet avec vous ?',
+      answer: (
+        <span>
+          Chaque projet débute par une phase de consultation où nous définissons
+          ensemble vos besoins et objectifs. Je vous propose ensuite un devis
+          détaillé et un planning prévisionnel. Tout au long du développement,
+          vous bénéficiez d&apos;un suivi régulier et de points d&apos;étape
+          pour assurer que le projet correspond à vos attentes.
+        </span>
+      ),
+    },
+    {
+      question: 'Quels sont vos tarifs ?',
+      answer: (
+        <span>
+          Les tarifs varient selon la nature et la complexité de votre projet.
+          Je propose des devis personnalisés après avoir bien compris vos
+          besoins spécifiques. N&apos;hésitez pas à me contacter pour discuter
+          de votre projet et obtenir une estimation.
+        </span>
+      ),
+    },
+    {
+      question: 'Proposez-vous un suivi après la livraison ?',
+      answer: (
+        <span>
+          Oui, je reste disponible après la livraison de votre projet. Je
+          propose une période de support gratuit pour les ajustements initiaux,
+          suivie de différentes options de maintenance pour assurer la pérennité
+          et l&apos;évolution de votre solution. Mon objectif est d&apos;établir
+          des relations durables avec mes clients.
+        </span>
+      ),
+    },
+  ],
   services: {
     agentAi: {
       items: [

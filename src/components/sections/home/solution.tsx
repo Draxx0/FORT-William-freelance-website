@@ -12,7 +12,7 @@ import { Icons } from '@/components/icons';
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid';
 import Safari from '@/components/safari';
 import { AutomationBean } from '@/components/sections/services/automatisation/automation-bean';
-import { Globe, Share2Icon } from 'lucide-react';
+import { Code, Globe, Share2Icon } from 'lucide-react';
 
 const features = [
   {
@@ -32,6 +32,24 @@ const features = [
       </div>
     ),
   },
+  {
+    Icon: Code,
+    name: 'Application web',
+    description: "Développement d'applications web sur-mesure",
+    href: '/services/web-application',
+    cta: 'Commencer',
+    className: 'col-span-4 lg:col-span-2',
+    background: (
+      <div className="max-h-[400px] min-h-auto rounded-md shadow-md relative">
+        <Safari
+          url="https://williamfort.fr"
+          videoUrl="https://williamfort.fr/videos/ridmi.mp4"
+          className="absolute right-2 top-4 sm:top-8 h-[240px] sm:h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105"
+        />
+      </div>
+    ),
+  },
+
   // {
   //   Icon: Bot,
   //   name: 'Agents IA',
@@ -65,7 +83,7 @@ const features = [
     description: 'Automatisation de vos tâches pour améliorer la productivité',
     href: '/services/automatisations',
     cta: 'Commencer',
-    className: 'col-span-4 lg:col-span-2',
+    className: 'col-span-4',
     background: (
       <AutomationBean className="absolute right-2 top-4 h-[300px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
     ),
