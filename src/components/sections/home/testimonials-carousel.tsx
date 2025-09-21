@@ -23,29 +23,16 @@ const companies = [
 
 const TESTIMONIALS = [
   {
-    name: 'Romain BOUVIER',
-    company: "Fondateur de l'agence VeryBerry",
+    name: 'Léa NUNES',
+    company: 'Passionnée de lecture',
     quote:
-      'J’ai eu la chance de travailler avec William sur un projet important pour mon entreprise, et je ne peux que recommander ses services. Dès le début, il a été à l’écoute, proactif et force de proposition. Il a parfaitement compris nos besoins et a su les traduire en résultats concrets, dans les délais impartis. Ce que j’ai particulièrement apprécié, c’est son professionnalisme, sa réactivité et son souci du détail. Il a toujours su trouver des solutions aux imprévus, tout en gardant une communication fluide et agréable tout au long du projet. Un vrai partenaire de confiance, avec qui je retravaillerai sans hésiter !',
-    service: 'Automatisation de la gestion des leads',
-  },
-  {
-    name: 'Sophie LEBRUN',
-    company: 'Responsable Marketing chez Bloom Natura',
-    quote:
-      'Nous avons confié à William la création de notre site vitrine, et le résultat a dépassé toutes nos attentes. Il a su parfaitement capter l’essence de notre marque et la retranscrire dans une interface à la fois élégante, moderne et fonctionnelle. Tout a été fluide, de la phase de conception jusqu’à la mise en ligne. William a été très réactif, à l’écoute et toujours force de proposition. Une collaboration hyper agréable et un site qui reflète enfin notre image !',
-    service: 'Création de site vitrine',
-  },
-  {
-    name: 'Julien MARTIN',
-    company: 'CTO chez Lokimo',
-    quote:
-      'Travailler avec William sur le développement de notre agent IA a été une véritable valeur ajoutée pour notre équipe. Il a rapidement compris nos enjeux métiers et proposé une solution performante, capable d’interagir avec nos utilisateurs de manière fluide et contextuelle. Son approche allie rigueur technique, compréhension fine des usages et sens du détail. Une vraie expertise, et une exécution sans accroc. On est déjà en train de prévoir la suite avec lui.',
-    service: 'Développement d’un agent conversationnel IA',
+      "William a donné vie à mon projet Ridmi, une application web pour les passionnés de lecture comme moi. Il a su parfaitement comprendre ma vision et la transformer en une plateforme intuitive et élégante. Son expertise technique et sa créativité ont permis de créer exactement ce dont j'avais besoin : un outil pour découvrir, organiser et partager mes lectures. Sa communication claire et son professionnalisme ont rendu la collaboration très agréable. Je suis ravie du résultat et je le recommande vivement !",
+    service: 'Développement de Ridmi - Application web de lecture',
+    src: '/web-app/ridmi-logo.png',
   },
 ];
 
-export default function Component() {
+export default function TestimonialsCarousel() {
   return (
     <Section
       id="avis"
@@ -71,11 +58,10 @@ export default function Component() {
                           width={0}
                           height={40}
                           key={index}
-                          src={`https://cdn.magicui.design/companies/${
-                            companies[index % companies.length]
-                          }.svg`}
-                          alt={`${companies[index % companies.length]} Logo`}
-                          className="mx-auto w-auto h-[40px] grayscale opacity-30"
+                          src={testimonial.src}
+                          alt={`${testimonial.name} Logo`}
+                          sizes="100vw"
+                          className="mx-auto w-[40px] grayscale opacity-30"
                         />
                       </div>
                     </BlurFade>

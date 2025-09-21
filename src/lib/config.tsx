@@ -1,6 +1,6 @@
 import { FirstBentoAnimation } from '@/components/first-bento-animation';
 import { SecondBentoAnimation } from '@/components/second-bento-animation';
-import { Clock, LayoutPanelTop, Workflow } from 'lucide-react';
+import { Clock, Code, LayoutPanelTop, Workflow } from 'lucide-react';
 import Image from 'next/image';
 
 export const BLUR_FADE_DELAY = 0.15;
@@ -61,6 +61,13 @@ export const siteConfig = {
             title: 'Site vitrine',
             description:
               "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
+          },
+          {
+            href: '/services/web-application',
+            icon: <Code className="size-4" />,
+            title: 'Application web',
+            description:
+              "Création d'applications web sur-mesure avec des fonctionnalités essentielles comme la connexion utilisateur, les mises à jour en direct et l'intégration de services externes.",
           },
           {
             href: '/services/automatisations',
@@ -142,6 +149,13 @@ export const siteConfig = {
               "Création de sites web sur mesure, modernes et performants, adaptés à vos besoins, optimisés pour le SEO et l'expérience utilisateur.",
           },
           {
+            href: '/services/web-application',
+            icon: <Code className="size-4" />,
+            title: 'Application web',
+            description:
+              "Création d'applications web sur-mesure avec des fonctionnalités essentielles comme la connexion utilisateur, les mises à jour en direct et l'intégration de services externes.",
+          },
+          {
             href: '/services/automatisations',
             icon: <Workflow className="size-4" />,
             title: 'Automatisation',
@@ -169,25 +183,6 @@ export const siteConfig = {
     {
       href: '/politique-de-confidentialite',
       label: 'Politique de confidentialité',
-    },
-  ],
-  faqs: [
-    {
-      question: 'FAQ',
-      answer: (
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea
-          quam quisquam. Quod excepturi mollitia velit quis eligendi incidunt,
-          fuga eaque fugit rerum quos cum corporis enim doloremque, fugiat sunt.
-          Similique minima iusto maxime ipsum quibusdam esse odio, in cum
-          obcaecati ducimus saepe iure beatae corrupti, at aspernatur molestias
-          tempora hic odit ipsa, eius voluptatem vero eveniet corporis. Error,
-          aliquam! Dolor necessitatibus et explicabo similique eum sit magnam,
-          adipisci alias laboriosam veniam sequi aliquid dolores magni
-          asperiores animi incidunt reprehenderit repellat voluptate excepturi
-          totam qui, praesentium commodi officia sint. Nihil!
-        </span>
-      ),
     },
   ],
   services: {
@@ -431,6 +426,60 @@ export const siteConfig = {
               frais supplémentaires. Ensuite, vous pouvez opter pour un contrat
               de maintenance mensuel pour continuer à bénéficier de mon support
               et des mises à jour de votre site.
+            </span>
+          ),
+        },
+      ],
+    },
+    webApplication: {
+      faqs: [
+        {
+          question:
+            'Combien de temps faut-il pour développer une application web ?',
+          answer: (
+            <span>
+              Le délai de développement varie selon la complexité de votre
+              application. Pour une application web standard, comptez 2 à 3
+              mois. Pour des projets plus complexes avec de nombreuses
+              fonctionnalités, le délai peut s&apos;étendre à 4-6 mois. Je vous
+              fournis un planning détaillé et des points d&apos;étape réguliers
+              tout au long du développement.
+            </span>
+          ),
+        },
+        {
+          question: "Comment assurez-vous la sécurité de l'application ?",
+          answer: (
+            <span>
+              La sécurité est une priorité absolue. Je mets en place plusieurs
+              niveaux de protection : authentification sécurisée, chiffrement
+              des données sensibles, protection contre les attaques courantes
+              (XSS, CSRF, injections SQL). Je suis également les dernières
+              bonnes pratiques en matière de sécurité web et effectue des tests
+              réguliers.
+            </span>
+          ),
+        },
+        {
+          question: "L'application sera-t-elle facile à utiliser ?",
+          answer: (
+            <span>
+              Absolument ! Je porte une attention particulière à
+              l&apos;expérience utilisateur. L&apos;interface est conçue pour
+              être intuitive et ergonomique. Je crée une documentation détaillée
+              pour faciliter la prise en main de l&apos;application.
+            </span>
+          ),
+        },
+        {
+          question: "Que se passe-t-il après le lancement de l'application ?",
+          answer: (
+            <span>
+              Je vous accompagne dans la durée ! La première semaine après le
+              lancement est dédiée aux ajustements et corrections sans frais
+              supplémentaires. Ensuite, je propose des contrats de maintenance
+              pour assurer le bon fonctionnement, les mises à jour de sécurité
+              et l&apos;évolution de votre application selon vos besoins.
             </span>
           ),
         },

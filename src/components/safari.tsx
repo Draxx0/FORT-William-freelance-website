@@ -3,6 +3,7 @@ import { SVGProps } from 'react';
 export interface SafariProps extends SVGProps<SVGSVGElement> {
   url?: string;
   src?: string;
+  videoUrl?: string;
   width?: number;
   height?: number;
   imageWidthAuto?: boolean;
@@ -11,6 +12,7 @@ export interface SafariProps extends SVGProps<SVGSVGElement> {
 export default function Safari({
   src,
   url,
+  videoUrl,
   width = 1203,
   height = 753,
   imageWidthAuto = false,
@@ -129,16 +131,38 @@ export default function Safari({
             fill="#A3A3A3"
           />
         </g>
-        <image
-          href={src}
-          width={imageWidthAuto ? 'auto' : width}
-          height="700"
-          x="1"
-          y="52"
-          preserveAspectRatio="xMidYMid slice"
-          clipPath="url(#roundedBottom)"
-          className={imageWidthAuto ? 'w-auto' : ''}
-        />
+        {videoUrl ? (
+          <foreignObject
+            width={imageWidthAuto ? 'auto' : width}
+            height="700"
+            x="1"
+            y="52"
+            clipPath="url(#roundedBottom)"
+            className={imageWidthAuto ? 'w-auto' : ''}
+          >
+            <video
+              src={videoUrl}
+              width={imageWidthAuto ? 'auto' : width}
+              height="700"
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </foreignObject>
+        ) : (
+          <image
+            href={src}
+            width={imageWidthAuto ? 'auto' : width}
+            height="700"
+            x="1"
+            y="52"
+            preserveAspectRatio="xMidYMid slice"
+            clipPath="url(#roundedBottom)"
+            className={imageWidthAuto ? 'w-auto' : ''}
+          />
+        )}
       </g>
       <defs>
         <clipPath id="path0">

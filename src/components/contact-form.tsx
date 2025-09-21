@@ -35,7 +35,6 @@ const formSchema = z.object({
   consent: z.boolean().refine((value) => value === true, {
     message: 'Veuillez accepter les conditions.',
   }),
-  marketing: z.boolean().optional(),
 });
 
 export default function ContactForm() {
@@ -148,40 +147,43 @@ export default function ContactForm() {
         <div>
           <Label className="font-bold">Service(s) sollicité(s)</Label>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-4">
-            {['Développer mon site', 'Créer mon automatisation', 'Autre'].map(
-              (service, i) => (
-                <Controller
-                  key={i}
-                  name="services"
-                  control={control}
-                  defaultValue={[]}
-                  rules={{ required: 'Choisissez au moins un service' }}
-                  render={({ field }) => (
-                    <div className="flex items-center whitespace-nowrap space-x-2">
-                      <Checkbox
-                        id={i.toString()}
-                        checked={field.value.includes(service)}
-                        onCheckedChange={(checked) => {
-                          if (checked) {
-                            field.onChange([...field.value, service]);
-                          } else {
-                            field.onChange(
-                              field.value.filter((s) => s !== service)
-                            );
-                          }
-                        }}
-                      />
-                      <label
-                        htmlFor={i.toString()}
-                        className="select-none cursor-pointer"
-                      >
-                        {service}
-                      </label>
-                    </div>
-                  )}
-                />
-              )
-            )}
+            {[
+              'Développer mon site',
+              'Créer mon automatisation',
+              'Développer mon application web',
+              'Autre',
+            ].map((service, i) => (
+              <Controller
+                key={i}
+                name="services"
+                control={control}
+                defaultValue={[]}
+                rules={{ required: 'Choisissez au moins un service' }}
+                render={({ field }) => (
+                  <div className="flex items-center whitespace-nowrap space-x-2">
+                    <Checkbox
+                      id={i.toString()}
+                      checked={field.value.includes(service)}
+                      onCheckedChange={(checked) => {
+                        if (checked) {
+                          field.onChange([...field.value, service]);
+                        } else {
+                          field.onChange(
+                            field.value.filter((s) => s !== service)
+                          );
+                        }
+                      }}
+                    />
+                    <label
+                      htmlFor={i.toString()}
+                      className="select-none cursor-pointer"
+                    >
+                      {service}
+                    </label>
+                  </div>
+                )}
+              />
+            ))}
           </div>
           {errors.services && (
             <p className="text-red-500 text-sm mt-2">

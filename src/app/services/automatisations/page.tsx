@@ -1,6 +1,7 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
 import ProjectsKeySteps from '@/components/sections/home/project-key-steps';
+import TestimonialsCarousel from '@/components/sections/home/testimonials-carousel';
 import { AutomatisationsExamples } from '@/components/sections/services/automatisation/automatisation-examples';
 import AutomatisationFAQ from '@/components/sections/services/automatisation/faq';
 import { HowItWorks } from '@/components/sections/services/automatisation/how-it-works';
@@ -50,6 +51,7 @@ export default function AutomatisationPage() {
         ]}
       />
       <AutomatisationFAQ />
+      <TestimonialsCarousel />
       <ContactSection />
     </>
   );

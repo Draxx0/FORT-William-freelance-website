@@ -23,7 +23,10 @@ type Props = {
   title: string[];
   description: string;
   cta: string;
-  image: {
+  image?: {
+    src: string;
+  };
+  video?: {
     src: string;
   };
   breadcrumb?: {
@@ -44,6 +47,7 @@ export const HeroBanner = ({
   description,
   cta,
   image,
+  video,
   breadcrumb,
   className,
 }: Props) => {
@@ -156,11 +160,19 @@ export const HeroBanner = ({
           transition={{ delay: 1.2, duration: 1, ease }}
         >
           <div className="max-h-[400px] min-h-auto rounded-md shadow-md relative">
-            <Safari
-              url="https://williamfort.fr"
-              src={image.src}
-              className="w-full h-full rounded-md"
-            />
+            {video ? (
+              <Safari
+                url="https://williamfort.fr"
+                videoUrl={video.src}
+                className="w-full h-full rounded-md"
+              />
+            ) : (
+              <Safari
+                url="https://williamfort.fr"
+                src={image?.src || ''}
+                className="w-full h-full rounded-md"
+              />
+            )}
             <BorderBeam duration={8} size={100} borderWidth={2} />
           </div>
         </motion.div>

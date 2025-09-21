@@ -1,6 +1,7 @@
 import ContactSection from '@/components/sections/common/contact';
 import { HeroBanner } from '@/components/sections/common/hero-banner';
 import ProjectsKeySteps from '@/components/sections/home/project-key-steps';
+import TestimonialsCarousel from '@/components/sections/home/testimonials-carousel';
 import VitrineFAQ from '@/components/sections/services/site-vitrine/faq';
 import { Brain, Monitor, Upload } from 'lucide-react';
 
@@ -51,6 +52,7 @@ export default function SiteVitrinePage() {
         ]}
       />
       <VitrineFAQ />
+      <TestimonialsCarousel />
       <ContactSection />
     </>
   );

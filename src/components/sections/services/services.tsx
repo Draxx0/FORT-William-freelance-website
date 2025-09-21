@@ -21,6 +21,21 @@ const ServicesData = [
     cta: 'Digitaliser mon activité ',
     ctaHref: '/services/site-vitrine',
   },
+  {
+    title: 'Application web',
+    description:
+      "Une application web sur-mesure pour optimiser vos processus et automatiser vos tâches. Je vous accompagne dans la création d'une application web moderne, responsive et optimisée pour votre activité.<br /> <br /> Grâce à un développement sur-mesure, je m'assure que votre application web reflète parfaitement l'image de votre entreprise, tout en offrant une navigation fluide et une expérience utilisateur agréable. Vous aurez un outil performant pour séduire et convaincre vos visiteurs en ligne, le tout sans compromis sur la vitesse et l'accessibilité.",
+    image: {
+      src: '/web-app-banner.png',
+      alt: 'Application web',
+    },
+    altImage: {
+      src: '/web-app/ridmi-logo.png',
+      alt: 'Ridmi Logo',
+    },
+    cta: 'Développer mon application web',
+    ctaHref: '/services/web-application',
+  },
   // {
   //   title: 'Site e-commerce Shopify',
   //   description:
