@@ -1,3 +1,4 @@
+import Chat from '@/components/chat/components/Chat';
 import Footer from '@/components/sections/home/footer';
 import Header from '@/components/sections/home/header';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
@@ -41,6 +42,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           <main>{children}</main>
+          <Chat />
           <TailwindIndicator />
           <Footer />
           <Toaster />
